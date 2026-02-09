@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { LiaLinkedin } from "react-icons/lia";
 import { BsEnvelopeOpen, BsTwitter, BsYoutube } from "react-icons/bs";
 import { CiLocationOn, CiPhone } from "react-icons/ci";
-import vector from "../assets/Vector.png";
+import vector from "/Vector.png";
 
 const Footer = () => {
   return (
