@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-import logo from "../assets/Dark Logo.png";
+import logo from "/Dark Logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { LiaLinkedin } from "react-icons/lia";
 import { BsEnvelopeOpen, BsTwitter, BsYoutube } from "react-icons/bs";
