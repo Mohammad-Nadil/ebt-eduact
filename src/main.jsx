@@ -50,7 +50,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*"  element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
