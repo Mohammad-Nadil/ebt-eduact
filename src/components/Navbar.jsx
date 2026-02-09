@@ -33,7 +33,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute  w-full  ">
+    <nav className="  w-full  ">
       <Container
         className={`flex justify-between items-center py-2 overflow-x-clip
           ${theme === "light" ? "bg-white" : "bg-primary"}
