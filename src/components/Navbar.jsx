@@ -7,8 +7,9 @@ import darkLogo from "../assets/Dark Logo.png";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { BiPhoneCall } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
+import { useTheme } from "../context/ThemeContext";
 
-const LinkTag = ({ to, children , className }) => (
+const LinkTag = ({ to, children, className }) => (
   <NavLink
     to={to}
     className={({ isActive }) =>
@@ -23,6 +24,8 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
 
+  const { theme } = useTheme();
+
   const aboutLinks = [
     { name: "About Us", path: "/about" },
     { name: "Contact", path: "/contact" },
@@ -32,14 +35,21 @@ const Navbar = () => {
   return (
     <nav className="absolute  w-full  ">
       <Container
-        className={`flex justify-between items-center py-2 overflow-x-clip`}
+        className={`flex justify-between items-center py-2 overflow-x-clip
+          ${theme === "light" ? "bg-white" : "bg-primary"}
+          `}
       >
         <div className="w-32 md:w-40 xl:w-48 ">
-          <img src={logo} alt="logo" className="w-full " />
+          {theme === "light" ? (
+            <img src={logo} alt="logo" className="w-full " />
+          ) : (
+            <img src={darkLogo} alt="logo" className="w-full " />
+          )}
         </div>
         <ul
-          className={`flex absolute sm:static top-full right-3 text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 md:gap-6 xl:gap-10  font-semibold text-primaryText text-3xl sm:text-sm md:text-base duration-300 sm:translate-x-0
+          className={`flex absolute sm:static top-full right-3 text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 md:gap-6 xl:gap-10  font-semibold  text-3xl sm:text-sm md:text-base duration-300 sm:translate-x-0
             ${open ? "translate-x-0 " : "translate-x-[150%]"}
+            ${theme === "light" ? "text-primaryText" : "text-white"}
             `}
         >
           <LinkTag to="/">Home</LinkTag>
@@ -66,9 +76,15 @@ const Navbar = () => {
               ))}
             </div>
           </li>
-          <LinkTag className={`sm:hidden`} to="/about">About</LinkTag>
-          <LinkTag className={`sm:hidden`} to="/contact">Contact us</LinkTag>
-          <LinkTag className={`sm:hidden`} to="/faq">Faq</LinkTag>
+          <LinkTag className={`sm:hidden`} to="/about">
+            About
+          </LinkTag>
+          <LinkTag className={`sm:hidden`} to="/contact">
+            Contact us
+          </LinkTag>
+          <LinkTag className={`sm:hidden`} to="/faq">
+            Faq
+          </LinkTag>
           <LinkTag to="/course">Course</LinkTag>
           <LinkTag to="/blog">Blog</LinkTag>
           <LinkTag to="/product">Product</LinkTag>
@@ -78,8 +94,10 @@ const Navbar = () => {
             <FaRegUser />
           </div>
         </ul>
-        <div className="call p-3 xl:p-4 hidden lg:flex items-center gap-x-4 bg-primary rounded-l-full ">
-          <div className="icon w-8 xl:w-13 aspect-square flex items-center justify-center bg-white rounded-full text-primary text-2xl xl:text-3xl">
+        <div
+          className={`call p-3 xl:p-4 hidden lg:flex items-center gap-x-4  rounded-l-full ${theme === "light" ? "bg-primary" : "bg-secondary"} `}
+        >
+          <div className={`icon w-8 md:w-10 :w-13 aspect-square flex items-center justify-center bg-white rounded-full  text-2xl xl:text-3xl ${theme === "light" ? "text-primary" : "text-secondary"}`}>
             <BiPhoneCall />
           </div>
           <div className="number text-white font-semibold 2xl:pr-9">
@@ -87,10 +105,12 @@ const Navbar = () => {
             <p className="text-sm">Call to Question</p>
           </div>
         </div>
-        <div onClick={() => setOpen(!open)} className="sm:hidden text-xl">
-          {open ?  <ImCross />: <FaBars />}
+        <div onClick={() => setOpen(!open)} className={`sm:hidden text-xl ${theme === "light" ? "text-primary" : "text-white"}`}>
+          {open ? <ImCross /> : <FaBars />}
         </div>
       </Container>
+
+      
     </nav>
   );
 };

@@ -24,12 +24,15 @@ import Checkout from "./pages/Checkout.jsx";
 import Login from "./pages/Login.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Error from "./pages/Error.jsx";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
+import ThemeToggler from "./components/ThemeToggler.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
-      {/* <Routes >
+      <ThemeProvider>
+        <Navbar />
+        {/* <Routes >
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -53,6 +56,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="*"  element={<Error />} />
       </Routes>
       <Footer /> */}
+      <ThemeToggler />
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
 );
