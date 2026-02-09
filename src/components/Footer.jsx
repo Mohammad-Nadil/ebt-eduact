@@ -5,15 +5,21 @@ import { FaFacebook } from "react-icons/fa";
 import { LiaLinkedin } from "react-icons/lia";
 import { BsEnvelopeOpen, BsTwitter, BsYoutube } from "react-icons/bs";
 import { CiLocationOn, CiPhone } from "react-icons/ci";
+import vector from "../assets/Vector.png";
 
 const Footer = () => {
   return (
     <footer
-      className={`bg-primaryText py-10 sm:py-16 xl:py-32 bg-[url('src/assets/Vector.png')]`}
+      style={{ backgroundImage: `url(${vector})` }}
+      className={`bg-primaryText py-10 sm:py-16 xl:py-32 `}
     >
-      <Container className={`flex md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:flex flex-col xl:flex-row items-start justify-between  text-white px-3 gap-y-12 `}>
-        <div className="main max-w-66 flex flex-col gap-y-7 col-span-4
-         ">
+      <Container
+        className={`flex md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:flex flex-col xl:flex-row items-start justify-between  text-white px-3 gap-y-12 `}
+      >
+        <div
+          className="main max-w-66 flex flex-col gap-y-7 col-span-4
+         "
+        >
           <div className="img">
             <img className="w-full" src={logo} alt="logo" />
           </div>
