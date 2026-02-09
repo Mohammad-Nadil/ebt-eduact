@@ -49,7 +49,7 @@ const Navbar = () => {
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-black"
           }
-          to="/course-detail"
+          to="/course/:id"
         >
           <p>CourseDetail</p>
         </NavLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
         >
           <p>Blog</p>
         </NavLink>
-       
+
         <NavLink
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-black"
@@ -70,7 +70,7 @@ const Navbar = () => {
         >
           <p>Product</p>
         </NavLink>
-       
+
         <NavLink
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-black"
@@ -86,6 +86,22 @@ const Navbar = () => {
           to="/checkout"
         >
           <p>Checkout</p>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-red-500" : "text-black"
+          }
+          to="/login"
+        >
+          <p>Login</p>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-red-500" : "text-black"
+          }
+          to="/pricing"
+        >
+          <p>Pricing</p>
         </NavLink>
       </ul>
     </nav>
