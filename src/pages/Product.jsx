@@ -11,6 +11,24 @@ const Product = () => {
       >
         <p>ProductDetail</p>
       </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "text-red-500" : "text-black")}
+        to="/cart"
+      >
+        <p>Cart</p>
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "text-red-500" : "text-black")}
+        to="/checkout"
+      >
+        <p>Checkout</p>
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "text-red-500" : "text-black")}
+        to="/login"
+      >
+        <p>Login</p>
+      </NavLink>
     </div>
   );
 };

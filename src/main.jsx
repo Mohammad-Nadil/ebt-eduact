@@ -29,7 +29,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Navbar />
-      <Routes>
+      {/* <Routes >
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -52,7 +52,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/pricing" element={<Pricing />} />
         <Route path="*"  element={<Error />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
     </BrowserRouter>
   </StrictMode>,
 );
