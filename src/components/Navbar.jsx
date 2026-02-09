@@ -61,13 +61,31 @@ const Navbar = () => {
         >
           <p>Blog</p>
         </NavLink>
+       
         <NavLink
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-black"
           }
-          to="/blog-detail"
+          to="/product"
         >
-          <p>BlogDetail</p>
+          <p>Product</p>
+        </NavLink>
+       
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-red-500" : "text-black"
+          }
+          to="/cart"
+        >
+          <p>Cart</p>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-red-500" : "text-black"
+          }
+          to="/checkout"
+        >
+          <p>Checkout</p>
         </NavLink>
       </ul>
     </nav>

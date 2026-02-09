@@ -17,6 +17,10 @@ import CourseCurriculum from "./components/CourseCurriculum.jsx";
 import CourseInstruction from "./components/CourseInstruction.jsx";
 import Blog from "./pages/Blog.jsx";
 import BlogDetails from "./pages/BlogDetails.jsx";
+import Product from "./pages/Product.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
+import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -28,7 +32,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/course" element={<Course />} />
-        <Route path="/course-detail" element={<CourseDetail />}>
+        <Route path="/course/:id" element={<CourseDetail />}>
           <Route index element={<CourseOverview />} />
           <Route path="overview" element={<CourseOverview />} />
           <Route path="review" element={<CourseReview />} />
@@ -36,7 +40,11 @@ createRoot(document.getElementById("root")).render(
           <Route path="instruction" element={<CourseInstruction />} />
         </Route>
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog-detail" element={<BlogDetails />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </BrowserRouter>
