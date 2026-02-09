@@ -45,14 +45,7 @@ const Navbar = () => {
         >
           <p>Course</p>
         </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "text-black"
-          }
-          to="/course/:id"
-        >
-          <p>CourseDetail</p>
-        </NavLink>
+       
         <NavLink
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-black"
