@@ -9,6 +9,7 @@ import hat from "/images/hat.png";
 import earth from "/images/earth.png";
 import bookLight from "/images/book.png";
 import bookDark from "/images/bookDark.png";
+import spring from "../../public/images/spring.svg";
 
 const Banner = () => {
   const { theme } = useTheme();
@@ -56,6 +57,7 @@ const Banner = () => {
               </button>
             ))}
           </div>
+          <img className="absolute right-0 top-1/2 translate-y-full w-16 xl:w-auto" src={spring} alt="spring" />
         </div>
         <div
           className={`hero_gallery w-[90%] sm:w-3/5 lg:w-1/2 aspect-square rounded-full bg-linear-to-br from-secondary to-primary flex items-center justify-center relative z-10 `}
@@ -96,7 +98,7 @@ const Banner = () => {
             </h2>
             <p className="text-xs text-[#b7b0b3]">Graphic Design</p>
             <div className="btn">
-              <button className="text-xs sm:text-base p-2 sm:p-3.5  rounded-md flex items-center gap-2 bg-secondary text-white hover:bg-primary duration-300">
+              <button className="text-xs sm:text-base py-2 px-3 sm:px-3.5 sm:py-2  rounded-md flex items-center gap-2 bg-secondary text-white hover:bg-primary duration-300">
                 <p>Join Now</p>
                 <FaArrowRightLong />
               </button>
