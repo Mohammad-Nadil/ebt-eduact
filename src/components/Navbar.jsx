@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FaAngleDown, FaBars, FaRegUser } from "react-icons/fa";
 import Container from "./Container";
-import logo from "/Logo.png";
-import darkLogo from "/Dark Logo.png";
+import logo from "/images/Logo.png";
+import darkLogo from "/images/Dark Logo.png";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { BiPhoneCall } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
@@ -36,13 +36,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute  w-full  ">
+    <nav className="absolute z-50 w-full   ">
       <Container
-        className={`flex justify-between items-center py-2 overflow-x-clip
-        
-          `}
+        className={`flex justify-between items-center py-2 overflow-x-clip  `}
       >
-        <div className="w-32 md:w-40 xl:w-48 ">
+        <div className="w-36 md:w-40 xl:w-48 ">
           {navbarTheme === "light" ? (
             <img src={logo} alt="logo" className="w-full " />
           ) : (
@@ -50,9 +48,14 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`flex absolute sm:static top-full right-3 text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 md:gap-6 xl:gap-10  font-semibold  text-3xl sm:text-sm md:text-base duration-300 sm:translate-x-0
+          className={`flex absolute sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 md:gap-6 xl:gap-10  font-semibold  text-3xl sm:text-sm md:text-base duration-300 sm:translate-x-0
             ${open ? "translate-x-0 " : "translate-x-[150%]"}
-            ${navbarTheme === "light" ? "text-primaryText" : "text-white"}
+           ${
+             navbarTheme === "light"
+               ? ` text-primaryText bg-white/30 backdrop-blur-lg border border-white/40 shadow-lg sm:bg-transparent sm:backdrop-blur-0 sm:border-0 sm:shadow-none sm:backdrop-blur-none `
+               : ` text-white bg-black/30 backdrop-blur-lg border border-white/20 shadow-lg sm:bg-transparent sm:backdrop-blur-0 sm:border-0 sm:shadow-none sm:backdrop-blur-none `
+           }
+
             `}
         >
           <LinkTag to="/">Home</LinkTag>
@@ -69,7 +72,7 @@ const Navbar = () => {
             />
 
             <div
-              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-primary bg-white p-2 text-nowrap transition-all duration-300
+              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300
               ${show ? "visible opacity-100" : "invisible opacity-0"}`}
             >
               {aboutLinks.map((item) => (
@@ -112,9 +115,9 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className={`sm:hidden text-xl ${navbarTheme === "light" ? "text-primary" : "text-white"}`}
+          className={`sm:hidden text-xl px-3 ${navbarTheme === "light" ? "text-primary" : "text-white"}`}
         >
-          {open ? <ImCross /> : <FaBars />}
+          {open ? <ImCross /> : <FaBars className="text-2xl" />}
         </div>
       </Container>
     </nav>

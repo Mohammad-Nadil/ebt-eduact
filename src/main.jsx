@@ -40,13 +40,7 @@ createRoot(document.getElementById("root")).render(
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/course" element={<Course />} />
-            <Route path="/course/:id" element={<CourseDetail />}>
-              <Route index element={<CourseOverview />} />
-              <Route path="overview" element={<CourseOverview />} />
-              <Route path="review" element={<CourseReview />} />
-              <Route path="curriculum" element={<CourseCurriculum />} />
-              <Route path="instruction" element={<CourseInstruction />} />
-            </Route>
+            <Route path="/course/:id" element={<CourseDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/product" element={<Product />} />

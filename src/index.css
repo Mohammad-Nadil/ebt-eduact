@@ -4,6 +4,7 @@
 @theme {
   --font-urbanist: "Urbanist", sans-serif;
   --color-primary: #4F5DE4;
+  --color-primaryDark: #121534;
   --color-secondary: #F57005;
   --color-primaryText: #2A254D;
 }
