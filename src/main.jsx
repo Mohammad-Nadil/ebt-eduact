@@ -26,38 +26,41 @@ import Pricing from "./pages/Pricing.jsx";
 import Error from "./pages/Error.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 import ThemeToggler from "./components/ThemeToggler.jsx";
+import LenisProvider from "./hooks/useLenis.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <ThemeProvider>
-        <Navbar />
-        <Routes >
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/course" element={<Course />} />
-        <Route path="/course/:id" element={<CourseDetail />}>
-          <Route index element={<CourseOverview />} />
-          <Route path="overview" element={<CourseOverview />} />
-          <Route path="review" element={<CourseReview />} />
-          <Route path="curriculum" element={<CourseCurriculum />} />
-          <Route path="instruction" element={<CourseInstruction />} />
-        </Route>
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="*"  element={<Error />} />
-      </Routes>
-      <Footer />
-      <ThemeToggler />
-      </ThemeProvider>
+      <LenisProvider>
+        <ThemeProvider>
+          <Navbar />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/course" element={<Course />} />
+            <Route path="/course/:id" element={<CourseDetail />}>
+              <Route index element={<CourseOverview />} />
+              <Route path="overview" element={<CourseOverview />} />
+              <Route path="review" element={<CourseReview />} />
+              <Route path="curriculum" element={<CourseCurriculum />} />
+              <Route path="instruction" element={<CourseInstruction />} />
+            </Route>
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+          <Footer />
+          <ThemeToggler />
+        </ThemeProvider>
+      </LenisProvider>
     </BrowserRouter>
   </StrictMode>,
 );

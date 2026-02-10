@@ -7,3 +7,9 @@
   --color-secondary: #F57005;
   --color-primaryText: #2A254D;
 }
+
+
+html,
+body {
+  scroll-behavior: auto;
+}
