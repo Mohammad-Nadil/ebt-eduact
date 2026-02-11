@@ -3,14 +3,19 @@
 
 @theme {
   --font-urbanist: "Urbanist", sans-serif;
-  --color-primary: #4F5DE4;
+  --color-primary: #4f5de4;
   --color-primaryDark: #121534;
-  --color-secondary: #F57005;
-  --color-primaryText: #2A254D;
+  --color-secondary: #f57005;
+  --color-primaryText: #2a254d;
+  --color-secondaryText: #697585;
+  --color-secondaryTextD: #f1f2fd;
+  --color-white: #fff;
+  --color-black: #000;
 }
-
 
 html,
 body {
   scroll-behavior: auto;
+  box-sizing: border-box !important;
+  font-family: var(--font-urbanist) !important;
 }

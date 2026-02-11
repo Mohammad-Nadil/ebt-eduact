@@ -9,7 +9,7 @@ import hat from "/images/hat.png";
 import earth from "/images/earth.png";
 import bookLight from "/images/book.png";
 import bookDark from "/images/bookDark.png";
-import spring from "../../public/images/spring.svg";
+import spring from "/images/spring.svg";
 
 const Banner = () => {
   const { theme } = useTheme();
@@ -42,6 +42,8 @@ const Banner = () => {
         <div
           className={`text w-full lg:w-1/2 flex flex-col gap-y-7 sm:gap-y-10 text-white relative z-10 before:absolute before:top-1/2 before:right-1/2 before:-translate-y-5/12 before:translate-x-[40%]  before:w-[140%] before:aspect-square before:rounded-full before:bg-linear-to-b before:from-[#ffffff15] before:to-[#ffffff00] before:z-[-1] after:absolute after:top-1/2 after:right-1/2 after:-translate-y-5/12 after:translate-x-[40%] after:w-[200%] after:aspect-square after:rounded-full after:bg-linear-to-b after:from-[#ffffff15] after:to-[#ffffff00] after:z-[-2]`}
         >
+          <div className="absolute w-4 top-0 right-0 aspect-square border border-white rounded-full" ></div>
+          <div className="absolute w-7 top-1/2 right-full -translate-full aspect-square border border-white rounded-full" ></div>
           <h1 className="font-extrabold text-[42px] leading-tight sm:text-5xl 2xl:text-7xl ">
             A Better Learning Journey Future Start Here
           </h1>
@@ -51,7 +53,7 @@ const Banner = () => {
           </p>
           <div className="btn flex items-center gap-x-3 sm:gap-x-5">
             {["Take Now", "Find The Course"].map((item, index) => (
-              <button className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none hover:bg-secondary border border-white hover:border-secondary duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer ">
+              <button key={index} className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none hover:bg-secondary border border-white hover:border-secondary duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer ">
                 <p>{item}</p>
                 <FaArrowRightLong />
               </button>
