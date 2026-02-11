@@ -22,6 +22,8 @@ import Error from "./pages/Error.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 import ThemeToggler from "./components/ThemeToggler.jsx";
 import LenisProvider from "./hooks/useLenis.js";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

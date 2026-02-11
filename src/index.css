@@ -11,6 +11,7 @@
   --color-secondaryTextD: #f1f2fd;
   --color-white: #fff;
   --color-black: #000;
+  --breakpoint-xs: 375px;
 }
 
 html,

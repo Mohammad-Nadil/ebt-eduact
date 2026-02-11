@@ -16,7 +16,7 @@ const LinkTag = ({ to, children, className }) => (
       isActive ? `text-secondary  ${className}` : `  ${className}`
     }
   >
-    <p>{children}</p>
+    <p className="hover:text-secondary duration-300" >{children}</p>
   </NavLink>
 );
 
@@ -64,7 +64,7 @@ const Navbar = () => {
             onClick={() => setShow(!show)}
             className="relative cursor-pointer items-center gap-1 hidden sm:flex"
           >
-            <span>About</span>
+            <span className="hover:text-secondary" >About</span>
             <FaAngleDown
               className={`transition-transform duration-300 ${
                 show ? "rotate-180" : ""

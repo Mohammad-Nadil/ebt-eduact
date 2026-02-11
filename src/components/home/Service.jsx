@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../Container";
-import education from "/images/education.png";
-import video from "/images/video.png";
-import bulb from "/images/bulb.png";
-import record from "/images/record.png";
+import education from "/images/home-images/education.png";
+import video from "/images/home-images/video.png";
+import bulb from "/images/home-images/bulb.png";
+import record from "/images/home-images/record.png";
 import { FaAngleRight } from "react-icons/fa6";
-import shape from "/images/service-shape.png";
-import imgShape from "/images/service-hover.png";
+import shape from "/images/home-images/service-shape.png";
+import imgShape from "/images/home-images/service-hover.png";
 import { useTheme } from "../../context/ThemeContext";
 const Service = () => {
   const { theme } = useTheme();

@@ -1,15 +1,15 @@
 import React, { useRef, useState } from "react";
 import Container from "../Container";
 import { FaArrowRightLong, FaPlay } from "react-icons/fa6";
-import bgImg from "../../../public/images/header-bg.png";
-import bgDark from "/images/banner-bgDark.png";
+import bgImg from "/images/home-images/header-bg.png";
+import bgDark from "/images/home-images/banner-bgDark.png";
 import { useTheme } from "../../context/ThemeContext";
-import star from "/images/Star 1.png";
-import hat from "/images/hat.png";
-import earth from "/images/earth.png";
-import bookLight from "/images/book.png";
-import bookDark from "/images/bookDark.png";
-import spring from "/images/spring.svg";
+import star from "/images/home-images/Star 1.png";
+import hat from "/images/home-images/hat.png";
+import earth from "/images/home-images/earth.png";
+import bookLight from "/images/home-images/earth.png";
+import bookDark from "/images/home-images/earth.png";
+import spring from "/images/home-images/spring.svg";
 
 const Banner = () => {
   const { theme } = useTheme();
@@ -53,7 +53,7 @@ const Banner = () => {
           </p>
           <div className="btn flex items-center gap-x-3 sm:gap-x-5">
             {["Take Now", "Find The Course"].map((item, index) => (
-              <button key={index} className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none hover:bg-secondary border border-white hover:border-secondary duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer ">
+              <button key={index} className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none hover:bg-secondary border border-white hover:border-secondary duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10 ">
                 <p>{item}</p>
                 <FaArrowRightLong />
               </button>
