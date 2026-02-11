@@ -1,9 +1,9 @@
 import React from "react";
-import Container from "./Container";
+import Container from "../Container";
 import classIcon from "/images/aboutClass.png";
 import liveIcon from "/images/aboutLive.png";
-import knowIcon from "../../public/images/Headphone Women.png";
-import { useTheme } from "../context/ThemeContext";
+import knowIcon from "/images/Headphone Women.png";
+import { useTheme } from "../../context/ThemeContext";
 import { FaArrowRightLong } from "react-icons/fa6";
 import element from "/images/aboutElement.png";
 
@@ -27,7 +27,7 @@ const HomeAbout = () => {
 
   return (
     <section id="about" className={theme === "light" ? "" : "bg-primaryDark"}>
-      <Container className={`pt-30 flex flex-col lg:flex-row items-center gap-13`}>
+      <Container className={`py-20 xl:py-30 flex flex-col lg:flex-row items-center gap-13`}>
         <div className="image w-[90%] sm:w-3/4 lg:w-1/2  aspect-square rounded-full bg-primaryText relative z-10">
           <div className="bg-linear-to-br from-secondary/20 to-secondary/0 rounded-full w-1/2 aspect-square  top-1/2 left-1/2 absolute -translate-1/2 z-30"></div>
           <div
@@ -71,13 +71,13 @@ const HomeAbout = () => {
           {item.map((item, index) => (
             <div
               key={index}
-              className="card_border p-px sm:p-0.5 bg-linear-to-br from-secondary to-[#ffffff00] rounded-3xl overflow-hidden leading-tight"
+              className="card_border p-px sm:p-0.5 bg-linear-to-br from-secondary to-[#ffffff00] rounded-xl md:rounded-3xl overflow-hidden leading-tight"
             >
               <div
-                className={`card p-2 sm:p-4  flex items-center gap-x-3 sm:gap-x-8 w-full h-full  rounded-3xl ${theme === "light" ? "bg-white" : "bg-primaryDark"}`}
+                className={`card p-2 sm:p-4  flex items-center gap-x-3 sm:gap-x-8 w-full h-full rounded-xl md:rounded-3xl ${theme === "light" ? "bg-white" : "bg-primaryDark"}`}
               >
                 <div
-                  className={`icon  p-2 sm:p-5 rounded-2xl  aspect-square bg-[#8089E1]/20`}
+                  className={`icon  p-2 sm:p-5 rounded-md sm:rounded-2xl  aspect-square bg-[#8089E1]/20`}
                 >
                   <img className=" w-16 sm:w-auto" src={item.image} alt="icon" />
                 </div>

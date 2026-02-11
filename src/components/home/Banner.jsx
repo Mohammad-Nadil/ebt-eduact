@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import Container from "./Container";
+import Container from "../Container";
 import { FaArrowRightLong, FaPlay } from "react-icons/fa6";
-import bgImg from "/images/header-bg.png";
+import bgImg from "../../../public/images/header-bg.png";
 import bgDark from "/images/banner-bgDark.png";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import star from "/images/Star 1.png";
 import hat from "/images/hat.png";
 import earth from "/images/earth.png";

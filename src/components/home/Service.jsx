@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./Container";
+import Container from "../Container";
 import education from "/images/education.png";
 import video from "/images/video.png";
 import bulb from "/images/bulb.png";
@@ -7,7 +7,7 @@ import record from "/images/record.png";
 import { FaAngleRight } from "react-icons/fa6";
 import shape from "/images/service-shape.png";
 import imgShape from "/images/service-hover.png";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 const Service = () => {
   const { theme } = useTheme();
   const service = [
