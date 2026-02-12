@@ -75,7 +75,7 @@ const Category = () => {
       <Container
         className={`pb-20 md:pb-30 xl:pb-40 xl:py-40 flex flex-col gap-y-10 lg:gap-y-20  `}
       >
-        <div className="heading mx-auto flex flex-col items-center gap-y-2 md:gap-y-3">
+        <div className="heading mx-auto flex flex-col items-center gap-y-2 md:gap-y-3 font-bold">
           <p className="text-xl sm:text-2xl text-primary">Category</p>
           <h2
             className={`text-2xl xs:text-3xl sm:text-4xl ${theme === "light" ? "text-primaryText" : "text-secondaryTextD"}`}
@@ -93,7 +93,11 @@ const Category = () => {
                     src={texture}
                     alt="placeholder"
                   />
-                  <div className="overlay absolute top-1/2 group-hover:top-full duration-300 -translate-x-1/12 z-20 bg-primary w-[250%] aspect-square rounded-full "></div>
+                  <div
+                    className={`overlay absolute top-1/2 group-hover:top-full duration-300 -translate-x-1/12 z-20 w-[250%] aspect-square rounded-full overflow-hidden ${theme === "light" ? " bg-secondaryTextD" : " bg-primaryText "} `}
+                  >
+                    <img className={`absolute top-0 left-1/12 rotate-45 z-30 ${theme === "light" ? " " : " brightness-500 " }  `} src={texture} alt=" texture" />
+                  </div>
                   <div className="category py-10 flex flex-col items-center sm:gap-3 absolute top-1/2 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 -translate-y-1/2 xl:-translate-y-1/5 duration-300 z-30 w-full">
                     <div className="icon p-3 sm:p-5 lg:p-0 lg:w-25 aspect-square rounded-full bg-secondary group-hover:bg-primary duration-300 flex flex-col items-center justify-center  ">
                       <img
@@ -102,7 +106,9 @@ const Category = () => {
                         alt="placeholder"
                       />
                     </div>
-                    <h2 className="name xs:text-lg sm:text-xl font-bold text-white pt-4 sm:pt-0">
+                    <h2
+                      className={`name xs:text-lg sm:text-xl font-bold pt-4 sm:pt-0 ${theme === "light" ? "text-primaryText" : "text-secondaryTextD"}`}
+                    >
                       Business Analysis
                     </h2>
                     <p className="quantity text-secondary group-hover:text-secondaryTextD duration-300">

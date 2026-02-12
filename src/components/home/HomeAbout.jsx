@@ -1,9 +1,9 @@
 import React from "react";
-import Container from "../../../src/components/Container";
+import Container from "../Container";
 import classIcon from "/images/home-images/aboutClass.png";
 import liveIcon from "/images/home-images/aboutLive.png";
 import knowIcon from "/images/home-images/Headphone Women.png";
-import { useTheme } from "../../../src/context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { FaArrowRightLong } from "react-icons/fa6";
 import element from "/images/home-images/aboutElement.png";
 
