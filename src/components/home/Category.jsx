@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import analysis from "/images/home-images/Analysis.png";
-import dataScience from "/images/home-images/Technology.png";
-import digitalMarketing from "/images/home-images/Digital marketing.png";
-import business from "/images/home-images/Start up.png";
+import bgLight from "/images/home-images/categoryBg.png";
+import bgDark from "/images/home-images/categoryBgDark.png";
 import texture from "/images/home-images/Texture.png";
 import { useTheme } from "../../context/ThemeContext";
 
@@ -66,8 +65,13 @@ const Category = () => {
   return (
     <section
       id="category"
-      className={` ${theme === "light" ? "" : "bg-primaryDark"}`}
+      className={` relative ${theme === "light" ? "" : "bg-primaryDark"}`}
     >
+      <img
+        className="w-full h-1/2 absolute top-0 left-0"
+        src={theme === "light" ? bgLight : bgDark}
+        alt="category-bg"
+      />
       <Container
         className={`pb-20 md:pb-30 xl:pb-40 xl:py-40 flex flex-col gap-y-10 lg:gap-y-20  `}
       >
