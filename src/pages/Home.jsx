@@ -7,9 +7,10 @@ import HomeCourse from "../components/home/HomeCourse";
 import { useTheme } from "../context/ThemeContext";
 import bgLight from "/images/home-images/serviceBg.png";
 import bgDark from "/images/home-images/serviceBgDark.png";
+import HomeRegister from "../components/HomeRegister";
 
 const Home = () => {
-  const {theme} = useTheme();
+  const { theme } = useTheme();
   let bg;
   if (theme === "light") {
     bg = bgLight;
@@ -19,13 +20,18 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <div className="relative overflow-hidden" >
-        <img className="absolute top-0 left-0 -translate-y-1/4 w-full" src={bg} alt="bg" />
+      <div className="relative overflow-hidden">
+        <img
+          className="absolute top-0 left-0 -translate-y-1/4 w-full"
+          src={bg}
+          alt="bg"
+        />
         <Service />
         <HomeAbout />
       </div>
       <Category />
       <HomeCourse />
+      <HomeRegister />
     </div>
   );
 };
