@@ -21,8 +21,10 @@ const Footer = () => {
             className="main max-w-66 flex flex-col gap-y-7 col-span-4
          "
           >
-            <div className="img">
-              <img className="w-full" src={logo} alt="logo" />
+            <div className="img ">
+              <a href="/">
+                <img className="w-full cursor-pointer " src={logo} alt="logo" />
+              </a>
             </div>
             <p className="text-lg text-[#b3ade1]">
               It is a long established fact that a reader will be distracted by
