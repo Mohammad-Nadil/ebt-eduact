@@ -30,7 +30,7 @@ const Pricing = () => {
       <div></div>
       <Container>
         <div className="py-30">
-          <div className="mx-auto hedding text-center max-w-[472px]">
+          <div className="mx-auto hedding text-center max-w-118">
             <p className="text-[#4F5DE4] font-bold font-urbanist text-[24px] leading-6.5  mb-7.5">
               Our Pricing Plan 
             </p>
@@ -40,7 +40,7 @@ const Pricing = () => {
               onClick={ () => setBilling("monthly")}
               className= {`py-[14.5px] px-8 rounded-[10px] font-semibold font-urbanist text-[16px] leading-6.5 ${ 
               billing === "monthly" ? "bg-[#F57005] text-white" :
-              "bg-[#E4E4E4] etxt-black"
+              "bg-[#E4E4E4] text-black"
             }`} 
               >
                 Monthly
@@ -49,7 +49,7 @@ const Pricing = () => {
               onClick={ () => setBilling("yearly")}
               className= {`py-[14.5px] px-7.5 rounded-[10px] font-semibold font-urbanist text-[16px] leading-6.5 ${ 
               billing === "yearly" ? "bg-[#F57005] text-white" :
-              "bg-[#E4E4E4] etxt-black"
+              "bg-[#E4E4E4] text-black"
             }`} 
               >
                 Yearly
