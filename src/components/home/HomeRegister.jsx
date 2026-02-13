@@ -1,9 +1,9 @@
 import React from "react";
-import Container from "./Container";
+import Container from "../Container";
 import leftImg from "/images/home-images/registerLeftImg.png";
 import rightImg from "/images/home-images/registerRightImg.png";
 import mainImg from "/images/home-images/registerImg.png";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomeRegister = () => {
@@ -12,7 +12,7 @@ const HomeRegister = () => {
   return (
     <section
       id="register"
-      className={` py-9 relative ${theme === "light" ? "bg-primary" : "bg-primaryDark"}`}
+      className={` py-9 relative ${theme === "light" ? "bg-primary" : "bg-[#000324]"}`}
     >
       <img
         className="absolute top-1/4 sm:top-1/2 sm:-translate-y-1/2 left-0 h-1/3 sm:h-full"
