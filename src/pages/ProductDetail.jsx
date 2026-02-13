@@ -10,8 +10,11 @@ import {
 } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import { AiOutlineCheck } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const ProductDetail = () => {
+  const stars = Array(5).fill(0);
   return (
     <section className="bg-white py-25 font-urbanist">
       {/* Header Section */}
@@ -70,7 +73,7 @@ const ProductDetail = () => {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <h3 className="text-[20px] text-[#2A254D] font-bold font-urbanist leading-6.5">
                 Quantity
-                </h3>
+              </h3>
               <div className="flex items-center border border-gray-200 rounded">
                 <button className="px-4 py-2 border-r hover:bg-gray-100">
                   <FaMinus />
@@ -82,20 +85,29 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="flex items-center gap-5">
-              
-              <button className="bg-[#2a2d3e] text-white px-6 py-3 rounded text-sm font-medium flex items-center gap-2 hover:bg-black transition">
+              <NavLink
+                to=""
+                className="bg-[#2A254D] text-white px-6 py-3
+               rounded text-[18px] font-bold font-urbanist flex 
+               items-center gap-2 hover:bg-black transition"
+              >
                 Add to Wishlist <FaArrowRight className="text-xs" />
-              </button>
-              <button className="bg-orange-500 text-white px-8 py-3 rounded text-sm font-medium flex items-center gap-2 hover:bg-orange-600 transition">
+              </NavLink>
+              <NavLink
+                to="/cart"
+                className="bg-orange-500 text-white px-8 py-3
+               rounded text-[18px] font-bold font-urbanist flex 
+               items-center gap-2 hover:bg-orange-600 transition"
+              >
                 Add to Cart <FaArrowRight className="text-xs" />
-              </button>
+              </NavLink>
             </div>
             {/* Social Share */}
             <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
-              <span className="text-sm font-bold text-gray-700">
+              <span className="text-[20px] font-bold text-[#2A254D] leading-6.5 pr-5">
                 Share with friend
               </span>
-              <div className="flex gap-3">
+              <div className="flex gap-5.25">
                 {/* Facebook */}
                 <div
                   className="w-10 h-10 bg-[#F6F6F6] rounded-full flex items-center
@@ -130,38 +142,69 @@ const ProductDetail = () => {
         </div>
 
         {/* Description Section */}
-        <div className="mt-20">
+        <div className="mt-10">
           <h3
-            className="text-2xl font-bold text-gray-800
-          mb-6 border-b-2 border-gray-100 pb-2 inline-block"
+            className="text-[32px] font-bold text-[#2A254D]
+             font-urbanist leading-11.75
+          mb-6 pb-2 inline-block"
           >
             Description
           </h3>
-          <div className="text-gray-600 space-y-4 text-sm leading-relaxed">
+          <div
+            className="text-secondaryText space-y-4
+           text-[16px] leading-8 font-semibold"
+          >
             <p>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even
-              slightly believable.
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum. Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos. Vestibulum sollicitudin varius
+              mauris non dignissim. Sed quis iaculis est. Nulla quam neque,
+              interdum vitae fermentum lacinia, interdum eu magna. Mauris non
+              posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl
+              bibendum accumsan vitae vitae nibh. Nam nec eros id magna
+              hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit
+              amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus,
+              ac dapibus dolor
             </p>
             <ul className="space-y-2">
-              <li className="flex items-center gap-3">
-                <span className="w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center text-[10px] text-white">
-                  ✓
+              <li
+                className="flex items-center gap-3 text-[20px] font-medium
+               font-urbanist leading-11.75 text-[#2A254D]"
+              >
+                <span
+                  className="w-6 h-6 rounded-full bg-orange-500 flex 
+                items-center justify-center text-[10px] text-white"
+                >
+                  <AiOutlineCheck className="text-[20px]" />
                 </span>{" "}
-                Nibh. Nam nec eros id magna hendrerit s
+                Nibh. Nam nec eros id magna hendrerits
               </li>
-              <li className="flex items-center gap-3">
-                <span className="w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center text-[10px] text-white">
-                  ✓
+              <li
+                className="flex items-center gap-3 text-[20px] font-medium
+               font-urbanist leading-11.75 text-[#2A254D]"
+              >
+                <span
+                  className="w-6 h-6 rounded-full bg-orange-500 flex 
+                items-center justify-center text-[10px] text-white"
+                >
+                  <AiOutlineCheck className="text-[20px]" />
                 </span>{" "}
-                Vitae nibh. Nam nec eros id magna hendrerit s
+                Vitae nibh. Nam nec eros id magna hendrerits
               </li>
-              <li className="flex items-center gap-3">
-                <span className="w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center text-[10px] text-white">
-                  ✓
+              <li
+                className="flex items-center gap-3 text-[20px] font-medium 
+              font-urbanist leading-11.75 text-[#2A254D]"
+              >
+                <span
+                  className="w-6 h-6 rounded-full bg-orange-500 flex
+                 items-center justify-center text-[10px] text-white"
+                >
+                  <AiOutlineCheck className="text-[20px]" />
                 </span>{" "}
-                Nam nec eros id magna hendrerit s
+                Nam nec eros id magna hendrerits
               </li>
             </ul>
           </div>
@@ -169,14 +212,16 @@ const ProductDetail = () => {
 
         {/* Reviews Section */}
         <div className="mt-20">
-          <h3 className="text-2xl font-bold text-gray-800 mb-8">2 Reviews</h3>
+          <h3 className="text-2xl font-bold text-[#2A254D] leading-11.75 mb-8">
+            2 Reviews
+          </h3>
           <div className="space-y-8">
             {[1, 2].map((review) => (
               <div
                 key={review}
                 className="flex gap-6 items-start pb-8 border-b border-gray-100"
               >
-                <div className="w-16 h-16 bg-[#1a2b42] rounded-full shrink-0"></div>
+                <div className="w-35 h-35 bg-[#1a2b42] rounded-full shrink-0"></div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-2">
                     <h4 className="font-bold text-gray-800">David Shon</h4>
@@ -187,7 +232,11 @@ const ProductDetail = () => {
                   <p className="text-gray-500 text-sm leading-relaxed">
                     Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
                     Nam nec eros id magna hendrerit sagittis. Nullam sed mi non
-                    odio feugiat volutpat sit amet nec elit.
+                    odio feugiat volutpat sit amet nec elit. Maecenas id
+                    hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor.
+                    Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                    Nam nec eros id magna hendrerit sagittis. Nullam sed mi non
+                    odio feugiat volutpat sit.
                   </p>
                 </div>
               </div>
@@ -200,9 +249,19 @@ const ProductDetail = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-4">
             Add a Review
           </h3>
-          <div className="flex gap-1 text-orange-300 mb-6 text-lg cursor-pointer">
-            <FaRegStar /> <FaRegStar /> <FaRegStar /> <FaRegStar />{" "}
-            <FaRegStar />
+          <div
+            className="flex gap-1 text-orange-300 mb-6 text-lg
+           cursor-pointer items-center"
+          >
+            <h3
+              className="text-secondaryText text-[20px] font-semibold
+             font-urbanist leading-6.5 pe-3"
+            >
+              Rate this Product
+            </h3>
+            {stars.map((_, index) => (
+              <FaRegStar key={index} className="text-[30px]" />
+            ))}
           </div>
 
           <form className="space-y-4">
@@ -210,20 +269,30 @@ const ProductDetail = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full bg-gray-50 border-none p-4 rounded text-sm focus:ring-1 focus:ring-orange-500"
+                className="w-full bg-gray-50 border-none p-4 rounded
+                 text-sm focus:ring-1
+                 focus:ring-orange-500 outline-none font-urbanist"
               />
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full bg-gray-50 border-none p-4 rounded text-sm focus:ring-1 focus:ring-orange-500"
+                className="w-full bg-gray-50 border-none p-4 rounded 
+                text-sm focus:ring-1
+                 focus:ring-orange-500 outline-none font-urbanist"
               />
             </div>
             <textarea
               rows="5"
               placeholder="Write a Message"
-              className="w-full bg-gray-50 border-none p-4 rounded text-sm focus:ring-1 focus:ring-orange-500"
+              className="w-full bg-gray-50 border-none p-4 rounded
+               text-sm focus:ring-1
+               focus:ring-orange-500 outline-none font-urbanist"
             ></textarea>
-            <button className="bg-orange-500 text-white px-8 py-3 rounded text-sm font-medium flex items-center gap-2 hover:bg-orange-600 transition">
+            <button
+              className="bg-orange-500 text-white px-8 py-3
+            rounded text-sm font-medium flex items-center gap-2
+             hover:bg-orange-600 transition font-urbanist"
+            >
               Leave a Review <FaArrowRight className="text-xs" />
             </button>
           </form>
