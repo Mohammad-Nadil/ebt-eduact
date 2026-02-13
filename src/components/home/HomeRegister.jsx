@@ -49,16 +49,16 @@ const HomeRegister = () => {
           </div>
         </div>
         <div className="right w-5/6 sm:w-2/3 md:w-2/5 lg:w-2/6 2xl:w-98 aspect-square rounded-full  relative bg-white z-20 border-white xl:mx-auto 2xl:mx-0  ">
-          <div className="w-full h-full relative z-20 flex flex-col justify-center items-center gap-3 xs:gap-0 sm:gap-y-7.5 md:gap-y-4 lg:gap-y-7.5 ">
+          <div className="w-full h-full relative z-20 flex flex-col justify-center items-center gap-3  sm:gap-y-7.5 md:gap-y-4 lg:gap-y-7.5 ">
             <p className={`xs:text-xl  w-7/12 font-bold mx-auto text-center ${theme === "light" ? "text-primaryText" : "text-secondaryTextD"}`}>
               Register Now and Get a
               <span className="text-secondary">50% Discount</span>
             </p>
-            <div className="grid grid-cols-2 md:gap-x-2 md:gap-y-2  sm:gap-x-11 sm:gap-y-8 lg:gap-x-11 lg:gap-y-8">
+            <div className="grid grid-cols-2 gap-3 md:gap-x-2 md:gap-y-2  sm:gap-x-11 sm:gap-y-8 lg:gap-x-11 lg:gap-y-8">
               {list.map((item) => (
                 <div
                   key={item}
-                  className={`flex flex-col gap-x-3 items-center p-2 xs:py-4 xs:px-6  ${theme === "light" ? "bg-secondaryTextD" : "bg-primaryText"} rounded-lg `}
+                  className={`flex flex-col gap-x-3 items-center p-2 xs:py-2 xs:px-3  ${theme === "light" ? "bg-secondaryTextD" : "bg-primaryText"} rounded-lg `}
                 >
                   <p className={`text-2xl font-bold ${theme === "light" ? "text-primary" : "text-secondary"}`}>50</p>
                   <p className={` text-sm ${theme === "light" ? "text-primaryText" : "text-secondaryTextD"}`}>sec</p>
