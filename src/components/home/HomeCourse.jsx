@@ -43,6 +43,7 @@ const HomeCourse = () => {
         <div className="main grid sm:grid-cols-2 xl:grid-cols-3 gap-x-9 gap-y-12">
           {list.map((item, index) => (
             <div
+              key={index}
               className={`card capitalize  relative  group  w-full p-3 lg:p-7.5 rounded-2xl flex flex-col gap-y-2 md:gap-y-4 xl:gap-y-7.5 border group duration-300 mt-16 sm:mt-20 drop-shadow-xl  ${theme === "light" ? "bg-white  border-primary/40 hover:border-primary  text-primaryText" : "bg-primaryDark border-secondaryTextD/40 hover:border-secondaryTextD text-secondaryTextD drop-shadow-white/20"}`}
             >
               <div className=" w-auto flex items-center">

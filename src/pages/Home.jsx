@@ -8,6 +8,7 @@ import { useTheme } from "../context/ThemeContext";
 import bgLight from "/images/home-images/serviceBg.png";
 import bgDark from "/images/home-images/serviceBgDark.png";
 import HomeRegister from "../components/HomeRegister";
+import HomeFeedback from "../components/home/HomeFeedback";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -32,6 +33,7 @@ const Home = () => {
       <Category />
       <HomeCourse />
       <HomeRegister />
+      <HomeFeedback />
     </div>
   );
 };
