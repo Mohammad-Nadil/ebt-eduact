@@ -111,7 +111,9 @@ const Footer = () => {
           </div>
         </Container>
       </footer>
-      <p className="copyright text-[#b3ade1] text-center py-3 text-sm md:py-8 bg-[#1F1944]">© Copyright 2023 by Company.com</p>
+      <p className="copyright text-[#b3ade1] text-center py-3 text-sm md:py-8 bg-[#1F1944]">
+        © Copyright 2023 by Company.com
+      </p>
     </>
   );
 };

@@ -10,6 +10,7 @@ import bgDark from "/images/home-images/serviceBgDark.png";
 import HomeRegister from "../components/home/HomeRegister";
 import HomeFeedback from "../components/home/HomeFeedback";
 import Team from "../components/home/Team";
+import HomeBlog from "../components/home/HomeBlog";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -36,6 +37,7 @@ const Home = () => {
       <HomeRegister />
       <HomeFeedback />
       <Team />
+      <HomeBlog />
     </div>
   );
 };

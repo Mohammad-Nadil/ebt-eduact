@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import Container from "../Container";
-import bg from "../../../public/images/home-images/teamBg.png";
+import bg from "/images/home-images/teamBg.png";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { CiYoutube } from "react-icons/ci";
 
@@ -11,7 +11,7 @@ const Team = () => {
   return (
     <section
       id="team"
-      className={` py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-secondaryTextD" : "bg-[#13194F] "} `}
+      className={` py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-secondaryTextD" : "bg-[#13194f] "} `}
       style={{ backgroundImage: `url(${bg})` }}
     >
       <Container className={`flex flex-col gap-y-8 sm:gap-y-10 lg:gap-y-16 xl:gap-y-24`}>
@@ -29,7 +29,7 @@ const Team = () => {
               key={index}
               className={`rounded-xl sm:rounded-3xl relative group hover:cursor-pointer flex even:flex-row-reverse ${theme === "light" ? "bg-white text-primaryText" : "bg-primaryDark text-secondaryTextD"} `}
             >
-              <div className="absolute aspect-11/12 w-1/2 rounded-3xl  top-0 left-0 -translate-1/12 bg-secondary group-hover:bg-primary transition-all duration-300 hidden"></div>
+              <div className="absolute aspect-11/12 w-1/2 rounded-3xl  top-0 left-0 -translate-1/12 bg-secondary group-hover:bg-primary transition-all duration-300 hidden sm:block"></div>
               <div className="img w-4/12 sm:w-full sm:h-full aspect-400/480  rounded-xl sm:rounded-3xl bg-neutral-500 relative z-10"></div>
               <div className="info sm:absolute sm:text-white w-3/5 sm:w-auto sm:inset-0 flex flex-col items-center justify-center gap-y-5 lg:opacity-0  sm:rounded-3xl group-hover:opacity-100 transition-all duration-300 sm:bg-black/40 z-20   ">
                 <div className="member flex flex-col text-center ">
