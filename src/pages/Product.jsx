@@ -22,7 +22,7 @@ const Product = () => {
         <div className="bg-gray-50 min-h-screen">
           {/* Header Section */}
           <div className="bg-[#0b0d17] text-white pt-35 pb-30 text-center">
-            <h1 className="text-5xl font-bold uppercase font-urbanist leading-[3rem] tracking-widest">
+            <h1 className="text-7xl font-bold uppercase font-urbanist leading-12 tracking-widest">
               Products
             </h1>
             <p className="text-lg font-normal mt-2 font-urbanist">
@@ -101,10 +101,13 @@ const Product = () => {
                     key={item.id}
                     className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-center group font-urbanist"
                   >
+                    
                     {/* Image with NavLink to ProductDetail */}
                     <NavLink to={`/product/${item.id}`}>
-                      <div className="h-48 bg-gray-50 mb-4 rounded flex items-center justify-center relative overflow-hidden cursor-pointer group-hover:shadow-lg transition">
-                        <span className="text-gray-300">Product Image</span>
+                      <div className="h-48 bg-gray-50 mb-4 rounded flex items-center
+                      justify-center relative overflow-hidden cursor-pointer group-hover:shadow-lg
+                      group-hover:scale-105 transition-transform duration-500">
+                        <span className="text-gray-300 font-urbanist">Product Image</span>
 
                         {/* Hover Icons */}
                         <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition">
@@ -142,7 +145,8 @@ const Product = () => {
                     <NavLink
                       to="/cart"
                       className="bg-gray-100 text-gray-700 px-6 py-2 rounded-md
-                      hover:bg-orange-500 hover:text-white transition w-full inline-block"
+                      hover:bg-orange-500 hover:text-white transition w-full
+                      font-urbanist inline-block"
                     >
                       Add to Cart
                     </NavLink>
