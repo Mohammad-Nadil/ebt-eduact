@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Container from "../components/Container";
+ import pricecard from '../../public/images/price-highlighted.png'
 
 import arrow from "../../public/images/arrow.png";
 
@@ -62,6 +63,16 @@ const Pricing = () => {
               </button>
             </div>
           </div>
+          {/* <div className="grid md:grid-cols-3 gap-9">
+              <div className={`pt-12.5 pb-7.5 bg-amber-400 `}>
+
+                  <h3 className={`pl-[125px] pr-[130px] mb-7`}> Website Design</h3>
+                  <p>
+
+                  </p>
+
+              </div>
+          </div> */}
         </div>
       </Container>
     </section>

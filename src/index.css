@@ -22,7 +22,7 @@ body {
 }
 
 .price-card{
-  background-image: url(../public/images/price-highlighted.png);
+  @apply background-image: url(../public/images/price-highlighted.png);
 }
 .price-card-2{
   background-image: url(../public/images/pricing.png);
