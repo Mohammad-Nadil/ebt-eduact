@@ -36,7 +36,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute z-50 w-full   ">
+    <nav className={` w-full ${isHome ? "absolute z-50" :""}  `}>
       <Container
         className={`flex justify-between items-center py-2 overflow-x-clip  `}
       >
