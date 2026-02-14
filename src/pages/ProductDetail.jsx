@@ -61,7 +61,7 @@ const ProductDetail = () => {
 
             <div className="text-sm space-y-1">
               <p className="font-urbanist">
-                <span className="font-bold font-urbanist text-gray-700">
+                <span className="font-urbanist text-secondaryText font-semibold texxt-[20px] leading-6.5">
                   REF:
                 </span>{" "}
                 305/639
@@ -87,17 +87,13 @@ const ProductDetail = () => {
             <div className="flex items-center gap-5">
               <NavLink
                 to=""
-                className="bg-[#2A254D] text-white px-6 py-3
-               rounded text-[18px] font-bold font-urbanist flex 
-               items-center gap-2 hover:bg-black transition"
+                className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-[#2A254D] text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10 "
               >
                 Add to Wishlist <FaArrowRight className="text-xs" />
               </NavLink>
               <NavLink
                 to="/cart"
-                className="bg-orange-500 text-white px-8 py-3
-               rounded text-[18px] font-bold font-urbanist flex 
-               items-center gap-2 hover:bg-orange-600 transition"
+                className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10"
               >
                 Add to Cart <FaArrowRight className="text-xs" />
               </NavLink>
@@ -289,11 +285,9 @@ const ProductDetail = () => {
                focus:ring-orange-500 outline-none font-urbanist"
             ></textarea>
             <button
-              className="bg-orange-500 text-white px-8 py-3
-            rounded text-sm font-medium flex items-center gap-2
-             hover:bg-orange-600 transition font-urbanist"
+              className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10"
             >
-              Leave a Review <FaArrowRight className="text-xs" />
+              Leave a Review <FaArrowRight className="text-md" />
             </button>
           </form>
         </div>
