@@ -10,8 +10,8 @@ const Login = () => {
         </div>
         <div class="bg-gray-200 rounded-xl p-6 mb-10 text-gray-700 text-lg mt-20">
             We have a demo account setup.
-            <span className="font-semibold">Username: demo</span> and 
-            <span className="font-semibold text-orange-500">Password: demo</span>
+            <span className="font-semibold"> Username : demo</span> and 
+            <span className="font-semibold text-orange-500"> Password : demo</span>
         </div>
         <div className="bg-white rounded-2xl flex justify-between items-center p-10 gap-10">
             <div>
