@@ -10,15 +10,15 @@ const Cta = () => {
   return (
     <section id="cta" className="bg-secondaryTextD py-10 sm:py-20 xl:py-30 overflow-x-clip px-3">
       <Container
-        className="flex items-center justify-between bg-cover xl:bg-contain  bg-no-repeat bg-center px-5 lg:px-40 py-5 xl:py-0 sm:rounded-3xl"
+        className="flex items-center justify-between bg-cover xl:bg-contain  bg-no-repeat bg-center px-5 lg:px-40 py-5 xl:py-0 rounded-xl sm:rounded-3xl"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="text flex flex-col i gap-y-7 lg:gap-y-10 text-white pt-12 relative">
-          <p className="absolute top-0 right-0  text-3xl lg:text-5xl text-secondary font-waterBrush">
+        <div className="text flex flex-col items-end sm:items-start gap-y-7 lg:gap-y-10 text-white pt-12 relative w-full sm:w-auto ">
+          <p className="absolute top-0 right-1/5  sm:right-0  text-3xl lg:text-5xl text-secondary font-waterBrush">
             Get your quality
           </p>
           <p className=" text-3xl lg:text-4xl xl:text-5xl font-bold">
-            Skills certificate <br /> from the edulerns
+            Skills certificate <br className="hidden sm:block" /> from the edulerns
           </p>
           <div className="btn">
             <button className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary  duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10 ">
