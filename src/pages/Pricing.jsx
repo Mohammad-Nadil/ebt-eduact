@@ -76,7 +76,7 @@ const Pricing = () => {
                   </p>
                   </div>
                   <div className="flex flex-col gap-7.5">
-                    <h4>All Services include:</h4>
+                    <h4 className={`font-urbanist font-bold text-[20px] leading-6.5 text-primaryText`}>All Services include:</h4>
                      <p>10 Days Time</p>
                     <p>Interview Training</p>
                     <p>Guarantee Approval</p>
