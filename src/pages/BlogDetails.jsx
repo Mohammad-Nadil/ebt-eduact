@@ -36,6 +36,8 @@ const BlogDetails = () => {
                 <p className="font-urbanist font-semibold text-[16px] leading-[32px] spacing-[2%] text-[#697585] py-[50px]">
                 Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi <br /> non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. <br /> Mauris gravida lacus metus, ac sagittis tortor hendrerit sit amet. Aenean dictum eget nulla in pharetra. Vestibulum <br />vulputate vehicula mattis. Vivamus dictum nec dui porta rutrum. Nam erat felis, mattis ac massa 
                 </p>
+
+              {/* Tags */}
               <div className="flex justify-between items-center border-t border-b py-[40px] border-[#E4E4E4]">
                  <div className="flex gap-2 items-center">
                     <h1 className="font font-urbanist font-bold text-[24px] text-[#2A254D] leading-[26px] ">Tags</h1>
@@ -54,28 +56,44 @@ const BlogDetails = () => {
                   </div>
               </div>
           
-               
-           <div className="pt-[50px]">
-             <span className="text-[24px] font-bold font-urbanist text-[#2A254D]">2 Comments</span>
-             <div className="border-b-2 border-[#E4E4E4] flex gap-[30px] items-center mt-[60px] pb-[66px]">
-              <div className="h-[165px] w-[165px] bg-[#152B4A] rounded-full"></div>
-              <div>
-                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">David Shon</h1>
-                <p className="font-semibold font-urbanist text-[#697585] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna <br /> hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id <br /> hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. </p>
-                <button className="text-[#697585] py-[10px] px-[23px] bg-[#F6F6F6] font-bold font-urbanist text-[16px] leading-[47px] rounded-2xl ">Reply</button>
+              {/* Comments  */}
+              <div className="pt-[50px]">
+                <span className="text-[24px] font-bold font-urbanist text-[#2A254D]">2 Comments</span>
+                <div className="border-b-2 border-[#E4E4E4] flex gap-[30px] items-center mt-[60px] pb-[66px]">
+                  <div className="h-[165px] w-[165px] bg-[#152B4A] rounded-full"></div>
+                  <div>
+                    <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">David Shon</h1>
+                    <p className="font-semibold font-urbanist text-[#697585] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna <br /> hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id <br /> hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. </p>
+                    <button className="text-[#697585] py-[10px] px-[23px] bg-[#F6F6F6] font-bold font-urbanist text-[16px] leading-[47px] rounded-2xl ">Reply</button>
+                  </div>
+                </div>
+                <div className="border-b-2 border-[#E4E4E4] flex gap-[30px] items-center mt-[60px] pb-[66px]">
+                  <div className="h-[165px] w-[165px] bg-[#152B4A] rounded-full"></div>
+                  <div>
+                    <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">Jhon Watchson</h1>
+                    <p className="font-semibold font-urbanist text-[#697585] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna <br /> hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id <br /> hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. </p>
+                    <button className="text-[#697585] py-[10px] px-[23px] bg-[#F6F6F6] font-bold font-urbanist text-[16px] leading-[47px] rounded-2xl ">Reply</button>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="border-b-2 border-[#E4E4E4] flex gap-[30px] items-center mt-[60px] pb-[66px]">
-              <div className="h-[165px] w-[165px] bg-[#152B4A] rounded-full"></div>
-              <div>
-                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">Jhon Watchson</h1>
-                <p className="font-semibold font-urbanist text-[#697585] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna <br /> hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id <br /> hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. </p>
-                <button className="text-[#697585] py-[10px] px-[23px] bg-[#F6F6F6] font-bold font-urbanist text-[16px] leading-[47px] rounded-2xl ">Reply</button>
+
+              {/* input */}
+              <div >
+                <h1 className="mt-[50px] text-[24px] font-bold font-urbanist text-[#2A254D]">Leave a Comment</h1>
+                <div className="flex justify-between mt-[40px] mb-[20px]">
+                  <input type="text" placeholder="Your Name" className="w-[424px] h-[60px] bg-[#F6F6F6] text-[#697585] text-[16px] font-urbanist font-semibold border-none pl-[30px] outline-0"/>
+                  <input type="email" placeholder="Email Address" className="w-[424px] h-[60px] bg-[#F6F6F6] text-[#697585] text-[16px] font-urbanist font-semibold border-none pl-[30px] outline-0" />
+                </div>
+                <input type="text" placeholder="Write a message" className="w-full h-[211px] bg-[#F6F6F6] text-[#697585] text-[16px] font-urbanist font-semibold border-none pl-[30px] outline-0" />
+                <div className="mt-[40px]">
+                  <button className="py-[19px] px-[32px] bg-[#F57005] text-white rounded-2xl ">Submit Comment </button>
+                </div>
+
+
+
               </div>
-            </div>
-           </div>
           
-          </div>
+            </div>
           <div className="right">
             <input className="bg-[#F57005] w-[416px] h-[80px] rounded-lg text-white"  type="text" placeholder="Type here" />
           </div>
