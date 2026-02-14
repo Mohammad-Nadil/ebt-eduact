@@ -1,6 +1,6 @@
 
 import Container from "../components/Container";
-import error from "../../public/images/404.png";
+import error from "/images/404.png";
 import { CiSearch } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
 
