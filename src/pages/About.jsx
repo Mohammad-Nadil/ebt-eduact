@@ -1,5 +1,7 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
+import Container from "../components/Container";
+import PopularCourse from "../components/PopularCourse";
 
 const About = () => {
   return (
@@ -8,19 +10,23 @@ const About = () => {
         {/* Spacer for Absolute Navbar */}
         <div className="h-16 sm:h-18 md:h-20 lg:h-24"></div>
 
-        {/* Your FAQ Section */}
+        {/* Top Section */}
         <div className="bg-black text-white h-[397px] flex items-center justify-center  font-urbanist">
           <h1 className="text-3xl md:text-5xl font-bold uppercase">
             About
-            <p className="font-normal text-[16px] text-center mt-2">Home  /  About </p>
+            <p className="font-normal text-[16px] text-center mt-2">
+              Home / About{" "}
+            </p>
           </h1>
-
         </div>
       </div>
-      {/* banner section start */}
-      <AboutSection/>
-      {/* banner section end */}
 
+      <Container>
+      {/* banner section start */}
+        <AboutSection />
+        <PopularCourse/>
+      {/* banner section end */}
+      </Container>
 
     </>
   );
