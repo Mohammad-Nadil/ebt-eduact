@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import Container from "../components/Container";
- import pricecard from '../../public/images/price-highlighted.png'
-
+import pricecard from "../../public/images/price-highlighted.png";
+import { AiOutlineCheck } from "react-icons/ai";
 import arrow from "../../public/images/arrow.png";
+import { useTheme } from "../context/ThemeContext";
+import { FaCheck } from "react-icons/fa";
 
 const Pricing = () => {
   const [billing, setBilling] = useState("monthly");
+
+  const { theme } = useTheme();
 
   const plans = [
     {
@@ -29,15 +33,19 @@ const Pricing = () => {
   ];
 
   return (
-    <section>
+    <section
+      className={` ${theme === "light" ? " bg-white" : "bg-primaryDark"}`}
+    >
       <div></div>
       <Container>
         <div className="py-30">
           <div className="mx-auto hedding text-center max-w-118">
             <p className="text-[#4F5DE4] relative  font-bold font-urbanist text-[24px] leading-6.5  mb-7.5">
-              Our Pricing Plan 
+              Our Pricing Plan
             </p>
-            <h2 className="mb-10 text-[#2A254D] font-bold font-urbanist text-[40px] leading-11.75 tracking-[0%]">
+            <h2
+              className={`mb-10 text-[#2A254D] font-bold font-urbanist text-[40px] leading-11.75 tracking-[0%] ${theme === "light" ? " bg-white" : "bg-primaryDark text-white"}`}
+            >
               Select a plan according to your requirements
             </h2>
             <div className="flex justify-center gap-3.5 mb-12">
@@ -63,16 +71,58 @@ const Pricing = () => {
               </button>
             </div>
           </div>
-          {/* <div className="grid md:grid-cols-3 gap-9">
-              <div className={`pt-12.5 pb-7.5 bg-amber-400 `}>
-
-                  <h3 className={`pl-[125px] pr-[130px] mb-7`}> Website Design</h3>
-                  <p>
-
-                  </p>
-
+          <div className="grid md:grid-cols-3 gap-9">
+            <div
+              className={`pt-12.5 pb-7.5 bg-[#f5f1f1] text-center rounded-[10px] relative after:w-[160%] after:aspect-square  after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:-translate-y-7/12 after:bg-secondary after:-z-10 z-0 overflow-hidden  `}
+            >
+              <div className="">
+                <h3
+                  className={`mb-7 font-urbanist font-medium text-[24px] leading-6.5 text-primaryText`}
+                >
+                  {" "}
+                  Website Design
+                </h3>
+                <p
+                  className={`mb-22.5 font-urbanist font-bold text-[40px] leading-11.75 text-primaryText`}
+                >
+                  $325
+                </p>
               </div>
-          </div> */}
+              <div className="flex flex-col gap-7.5">
+                <h4
+                  className={`font-urbanist font-medium text-[20px] leading-6.5 text-[##000000]`}
+                >
+                  All Services include:
+                </h4>
+                <div
+                  className="flex  items-center justify-center gap-4
+                    "
+                >
+                  <FaCheck /> <p>10 Days Time</p>
+                </div>
+                <div
+                  className="flex  items-center justify-center gap-4
+                    "
+                >
+                  <FaCheck /> <p>Interview Training</p>
+                </div>
+                <div
+                  className="flex  items-center justify-center gap-4
+                    "
+                >
+                  <FaCheck />
+                  <p>Guarantee Approval</p>
+                </div>
+                <div
+                  className="flex  items-center justify-center gap-4
+                    "
+                >
+                  <FaCheck />
+                  <p>Documents Submission</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </section>
