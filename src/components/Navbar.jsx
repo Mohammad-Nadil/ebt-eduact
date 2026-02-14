@@ -48,7 +48,7 @@ const Navbar = () => {
           )}
         </NavLink>
         <ul
-          className={`flex absolute sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 xl:gap-10  font-semibold  text-3xl sm:text-xs md:text-base duration-300 sm:translate-x-0
+          className={`flex absolute z-99999999 sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 xl:gap-10  font-semibold  text-3xl sm:text-xs md:text-base duration-300 sm:translate-x-0
             ${open ? "translate-x-0 " : "translate-x-[150%]"}
            ${
              navbarTheme === "light"
