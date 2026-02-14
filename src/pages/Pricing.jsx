@@ -5,6 +5,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import arrow from "../../public/images/arrow.png";
 import { useTheme } from "../context/ThemeContext";
 import { FaCheck } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Pricing = () => {
   const [billing, setBilling] = useState("monthly");
@@ -19,13 +20,13 @@ const Pricing = () => {
       popular: false,
     },
     {
-      title: "Website Design",
+      title: "Website Design 3",
       monthly: "$325",
       yearly: "$3000",
       popular: true,
     },
     {
-      title: "Website Design",
+      title: "Website Design 2",
       monthly: "$325",
       yearly: "$3000",
       popular: false,
@@ -72,25 +73,26 @@ const Pricing = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-9">
+           {plans.map((plan, index) => ( 
             <div
-              className={`pt-12.5 pb-7.5 bg-[#f5f1f1] text-center rounded-[10px] relative after:w-[160%] after:aspect-square  after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:-translate-y-7/12 after:bg-secondary after:-z-10 z-0 overflow-hidden  `}
+                key={index}
+              className={`pt-12.5 pb-7.5 drop-shadow-[0px 0px 60px rgba(0, 0, 0, 0.706)] bg-[#f5f1f1] text-center rounded-[10px] relative after:w-[160%] after:aspect-square  after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:-translate-y-8/12 after:bg-neutral-300  group hover:after:bg-secondary after:-z-10 z-0 overflow-hidden after:duration-300  items-center `}
             >
-              <div className="">
+              <div className=" text-primaryText group-hover:text-white duration-300">
                 <h3
-                  className={`mb-7 font-urbanist font-medium text-[24px] leading-6.5 text-primaryText`}
+                  className={`mb-7 font-urbanist font-medium text-[24px] leading-6.5 `}
                 >
-                  {" "}
-                  Website Design
+                 {plan.title}
                 </h3>
                 <p
-                  className={`mb-22.5 font-urbanist font-bold text-[40px] leading-11.75 text-primaryText`}
+                  className={`mb-22.5 font-urbanist font-bold text-[40px] leading-11.75 `}
                 >
-                  $325
+                  {  plan.monthly}
                 </p>
               </div>
-              <div className="flex flex-col gap-7.5">
+              <div className="flex flex-col gap-7.5 pb-10 border-b border-[#E4E4E4]">
                 <h4
-                  className={`font-urbanist font-medium text-[20px] leading-6.5 text-[##000000]`}
+                  className={`font-urbanist font-medium text-[20px] leading-6.5 text-[#000000]`}
                 >
                   All Services include:
                 </h4>
@@ -121,7 +123,13 @@ const Pricing = () => {
                   <p>Documents Submission</p>
                 </div>
               </div>
-            </div>
+              <div className="btn pt-7.5 ">
+                <button className="text-base font-urbanist font-bold text-[18px]  text-white sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary  duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10 border mx-auto  ">
+                  <p>Back to Home</p>
+                  <FaArrowRightLong />
+                </button>
+              </div>
+            </div>))}
           </div>
         </div>
       </Container>
