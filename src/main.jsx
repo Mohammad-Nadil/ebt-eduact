@@ -53,7 +53,7 @@ createRoot(document.getElementById("root")).render(
             <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
-          <ThemeToggler />
+          {/* <ThemeToggler /> */}
         </ThemeProvider>
       </LenisProvider>
     </BrowserRouter>
