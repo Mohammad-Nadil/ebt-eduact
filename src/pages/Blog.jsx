@@ -9,9 +9,6 @@ import Card from "../components/card";
 const Blog = () => {
   return (
     <div>
-    
-      <div className="bg-white h-24"></div>
-
       {/* Banner */}
       <div className="bg-black pt-20 pb-32">
         <Container>
