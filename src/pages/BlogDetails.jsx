@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
 import { NavLink } from "react-router-dom";
+import { CiClock2 } from "react-icons/ci";
 
 const BlogDetails = () => {
   return (
@@ -15,9 +16,33 @@ const BlogDetails = () => {
 
         </Container>
       </div>
+      <div>
+        <Container className="my-[100px]">
+          <div className="flex justify-between">
+            <div className="left">
+           <div className="w-[868px] h-[449px] bg-[#152B4A] rounded-2xl"></div>
+           <div className="flex gap-[40px] items-center mt-[40px] ">
+            <h2 className="text-white text-[14px] leading-[26px] font-semibold bg-[#4F5DE4] p-[2px] rounded-lg">Development</h2>
+           <div className="flex items-center gap-[10px]">
+             <span className="text-[#F57005]"><CiClock2 /></span>
+             <h3 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">26 Mar, 2023</h3>
+           </div>
+           </div>
+            <h1 className="font-bold font-urbanist text-[32px] leading-[47px] text-[#2A254D] mt-[20px] mb-[30px]">The Complete Web Developer Guideline 2023</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor
 
-      
+          </p>
+          <p>
+            Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. Mauris gravida lacus metus, ac sagittis tortor hendrerit sit amet. Aenean dictum eget nulla in pharetra. Vestibulum vulputate vehicula mattis. Vivamus dictum nec dui porta rutrum. Nam erat felis, mattis ac massa 
+          </p>
+          </div>
+          <div className="right">
+            <input className="bg-[#F57005] w-[416px] h-[80px] rounded-lg text-white"  type="text" placeholder="Type here" />
+          </div>
+          </div>
+        </Container>
     </div>
+  </div>
   );
 };
 
