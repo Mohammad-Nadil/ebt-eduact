@@ -36,23 +36,21 @@ const BlogDetails = () => {
           <p className="font-urbanist font-semibold text-[16px] leading-[32px] spacing-[2%] text-[#697585] py-[50px]">
             Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi <br /> non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. <br /> Mauris gravida lacus metus, ac sagittis tortor hendrerit sit amet. Aenean dictum eget nulla in pharetra. Vestibulum <br />vulputate vehicula mattis. Vivamus dictum nec dui porta rutrum. Nam erat felis, mattis ac massa 
           </p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center border-t border-b py-[40px] border-[#E4E4E4]">
             <div className="flex gap-2 items-center">
-              <h1>Tags</h1>
-              <div className="flex gap-2">
-                <button>Marketing</button>
-                <button>Development</button>
-                <button>Design</button>
+              <h1 className="font font-urbanist font-bold text-[24px] text-[#2A254D] leading-[26px] ">Tags</h1>
+              <div className="flex gap-[8px]  ml-[20px]">
+                <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] rounded-2xl">Marketing</button>
+                <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] rounded-2xl">Development</button>
+                <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] rounded-2xl">Design</button>
               </div>
 
             </div>
-            <div className="flex gap-2 items-center">
-             <FaFacebookF />
-              <FaLinkedinIn />
-              <FaTwitter />
-              <FaYoutube />
-
-
+            <div className="flex gap-[21px] items-center ">
+             <div className="h-[40px] w-[40px] rounded-full bg-[#F6F6F6] text-[#2A254D] flex justify-center items-center"><FaFacebookF /></div>
+             <div className="h-[40px] w-[40px] rounded-full bg-[#F6F6F6] text-[#2A254D] flex justify-center items-center"> <FaLinkedinIn /></div>
+              <div className="h-[40px] w-[40px] rounded-full bg-[#F6F6F6] text-[#2A254D] flex justify-center items-center"><FaTwitter /></div>
+              <div className="h-[40px] w-[40px] rounded-full bg-[#F6F6F6] text-[#2A254D] flex justify-center items-center"><FaYoutube /></div>
             </div>
           </div>
           </div>
