@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Cta = () => {
   return (
-    <section id="cta" className="bg-secondaryTextD py-10 sm:py-20 xl:py-30 overflow-x-clip px-3">
+    <section id="cta" className="bg-white py-10 sm:py-20 xl:py-30 overflow-x-clip px-3">
       <Container
         className="flex items-center justify-between bg-cover xl:bg-contain  bg-no-repeat bg-center px-5 lg:px-40 py-5 xl:py-0 rounded-xl sm:rounded-3xl"
         style={{ backgroundImage: `url(${bg})` }}

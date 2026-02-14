@@ -12,7 +12,7 @@ const HomeBlog = () => {
   return (
     <section
       id="blog"
-      className={`py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-secondaryTextD" : "bg-primaryDark   "}`}
+      className={`py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-white" : "bg-primaryDark   "}`}
     >
       <Container
         className={`flex flex-col gap-y-8 sm:gap-y-10 lg:gap-y-16 xl:gap-y-24`}

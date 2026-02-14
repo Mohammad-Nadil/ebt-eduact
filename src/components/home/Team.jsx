@@ -11,7 +11,7 @@ const Team = () => {
   return (
     <section
       id="team"
-      className={` py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-secondaryTextD" : "bg-[#13194f] "} `}
+      className={` py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-secondaryTextD" : "bg-[#F1F2FD] "} `}
       style={{ backgroundImage: `url(${bg})` }}
     >
       <Container className={`flex flex-col gap-y-8 sm:gap-y-10 lg:gap-y-16 xl:gap-y-24`}>
