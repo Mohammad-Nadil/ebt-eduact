@@ -67,7 +67,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-9">
-              <div className={`pt-12.5 pb-7.5 bg-[#cf9898] text-center rounded-[10px]`}>
+              <div className={`pt-12.5 pb-7.5 bg-[#f5f1f1] text-center rounded-[10px]`}>
 
                   <div className="">
                     <h3 className={`mb-7 font-urbanist font-medium text-[24px] leading-6.5 text-primaryText`}> Website Design</h3>
@@ -76,7 +76,7 @@ const Pricing = () => {
                   </p>
                   </div>
                   <div className="flex flex-col gap-7.5">
-                    <h4 className={`font-urbanist font-bold text-[20px] leading-6.5 text-primaryText`}>All Services include:</h4>
+                    <h4 className={`font-urbanist font-medium text-[20px] leading-6.5 text-[##000000]`}>All Services include:</h4>
                      <p>10 Days Time</p>
                     <p>Interview Training</p>
                     <p>Guarantee Approval</p>
