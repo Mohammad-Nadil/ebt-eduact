@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import { NavLink } from "react-router-dom";
 import { CiClock2 } from "react-icons/ci";
+import {FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const BlogDetails = () => {
   return (
@@ -29,12 +30,31 @@ const BlogDetails = () => {
            </div>
            </div>
             <h1 className="font-bold font-urbanist text-[32px] leading-[47px] text-[#2A254D] mt-[20px] mb-[30px]">The Complete Web Developer Guideline 2023</h1>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor
+            <p className="font-urbanist font-semibold text-[16px] leading-[32px] spacing-[2%] text-[#697585]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some <br /> form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a <br /> passage of Lorem Ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /> Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum <br /> lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum <br /> accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit <br /> amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor
 
           </p>
-          <p>
-            Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. Mauris gravida lacus metus, ac sagittis tortor hendrerit sit amet. Aenean dictum eget nulla in pharetra. Vestibulum vulputate vehicula mattis. Vivamus dictum nec dui porta rutrum. Nam erat felis, mattis ac massa 
+          <p className="font-urbanist font-semibold text-[16px] leading-[32px] spacing-[2%] text-[#697585] py-[50px]">
+            Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi <br /> non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. <br /> Mauris gravida lacus metus, ac sagittis tortor hendrerit sit amet. Aenean dictum eget nulla in pharetra. Vestibulum <br />vulputate vehicula mattis. Vivamus dictum nec dui porta rutrum. Nam erat felis, mattis ac massa 
           </p>
+          <div className="flex justify-between items-center">
+            <div className="flex gap-2 items-center">
+              <h1>Tags</h1>
+              <div className="flex gap-2">
+                <button>Marketing</button>
+                <button>Development</button>
+                <button>Design</button>
+              </div>
+
+            </div>
+            <div className="flex gap-2 items-center">
+             <FaFacebookF />
+              <FaLinkedinIn />
+              <FaTwitter />
+              <FaYoutube />
+
+
+            </div>
+          </div>
           </div>
           <div className="right">
             <input className="bg-[#F57005] w-[416px] h-[80px] rounded-lg text-white"  type="text" placeholder="Type here" />
