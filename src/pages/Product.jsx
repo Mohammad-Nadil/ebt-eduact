@@ -18,7 +18,7 @@ const Product = () => {
 
   return (
     <>
-      <section className="py-25">
+      <section>
         <div className="bg-gray-50 min-h-screen">
           {/* Header Section */}
           <div className="bg-[#0b0d17] text-white pt-35 pb-30 text-center">
