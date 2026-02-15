@@ -26,6 +26,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Teacher from "./components/teacher/Teacher.jsx";
 import Gallery from "./components/teacher/Gallery.jsx";
+import BecomeTeacher from "./components/teacher/BecomeTeacher.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -45,6 +46,7 @@ createRoot(document.getElementById("root")).render(
             <Route path="/product" element={<Product />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/teacher" element={<Teacher />} />
+            <Route path="/become-teacher" element={<BecomeTeacher />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
