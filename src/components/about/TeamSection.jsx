@@ -36,7 +36,7 @@ const TeamSection = () => {
                         <FaGreaterThan />
                       </span>
                     </div>
-      <h2 className="title">Meet Our Professional Team Members</h2>
+      <h2 className="title font-bold">Meet Our Professional Team Members</h2>
       <Container>
         <div className="team-container">
           {teamMembers.map((member, index) => (
