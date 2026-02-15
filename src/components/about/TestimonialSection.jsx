@@ -79,8 +79,8 @@ export default function TestimonialSection() {
             {/* Heading */}
             <div className="mb-10">
               <div className="flex items-center justify-center gap-x-2 mb-4">
-                <p className="text-blue-600 font-bold text-xs sm:text-sm uppercase">
-                  Popular Course
+                <p className="text-blue-600 font-bold text-xs sm:text-sm">
+                  Our Team
                 </p>
                 <span className="text-[#F57005] flex items-center text-xs sm:text-sm">
                   <FaGreaterThan />
