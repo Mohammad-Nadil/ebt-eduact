@@ -1,10 +1,35 @@
 import React from "react";
+import AboutSection from "../components/about/AboutSection";
+import Container from "../components/Container";
+import PopularCourse from "../components/about/PopularCourse";
+import TestimonialSection from "../components/about/TestimonialSection";
+import TeamSection from "../components/about/TeamSection";
+import SubscribeBanner from "../components/about/SubscribeBanner";
 
 const About = () => {
   return (
-    <div>
-      <h1 className="text-7xl">About</h1>
-    </div>
+    <>
+      <div className="w-full font-urbanist">
+        {/* Spacer for Absolute Navbar */}
+        <div className="h-16 sm:h-18 md:h-20 lg:h-24"></div>
+
+        {/* Top Section */}
+        <div className="bg-black text-white h-[397px] flex items-center justify-center  font-urbanist">
+          <h1 className="text-3xl md:text-5xl font-bold uppercase">
+            About
+            <p className="font-normal text-[16px] text-center mt-2">
+              Home / About{" "}
+            </p>
+          </h1>
+        </div>
+      </div>
+    
+        <AboutSection />
+        <PopularCourse/>
+        <TestimonialSection/>
+        <TeamSection/>
+        <SubscribeBanner/>
+    </>
   );
 };
 

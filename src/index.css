@@ -24,6 +24,16 @@ body {
   font-family: var(--font-urbanist) !important;
 }
 
+.price-card-2{
+  background-image: url(../public/images/pricing.png);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2563eb;
+}
+
+
+
  .pricing-card div p {
   @apply text-[20px] font-urbanist font-medium leading-6.5 text-black 
   
