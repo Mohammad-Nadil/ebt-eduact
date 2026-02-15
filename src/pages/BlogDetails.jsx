@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import { NavLink } from "react-router-dom";
 import { CiClock2, CiSearch } from "react-icons/ci";
-import {FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import {FaAngleDoubleRight, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const BlogDetails = () => {
   return (
@@ -144,7 +144,39 @@ const BlogDetails = () => {
             </div>
 
             {/* Categories part */}
+
+            <div className="p-[30px] bg-white rounded-2xl mt-[30px]">
+              <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D] mb-[30px]">Categories</h1>
+
+              <div className="flex gap-[8px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <span className="text-[#F57005]"><FaAngleDoubleRight /></span>
+                <h2 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">Web Development</h2>
+              </div>
+
+              <div className="flex gap-[8px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <span className="text-[#F57005]"><FaAngleDoubleRight /></span>
+                <h2 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">Social Marketing</h2>
+              </div>
+
+              <div className="flex gap-[8px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <span className="text-[#F57005]"><FaAngleDoubleRight /></span>
+                <h2 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">Technology</h2>
+              </div>
+
+              <div className="flex gap-[8px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <span className="text-[#F57005]"><FaAngleDoubleRight /></span>
+                <h2 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">Business & Finance</h2>
+              </div>
+
+              <div className="flex gap-[8px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <span className="text-[#F57005]"><FaAngleDoubleRight /></span>
+                <h2 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">Digital Solution</h2>
+              </div>
+
+            </div>
+
             
+
           </div>
         </div>
         </Container>
