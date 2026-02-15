@@ -174,7 +174,7 @@ const BecomeTeacher = () => {
           alt=" bg "
         />
         <Container
-          className={`flex flex-col gap-y-8 sm:gap-y-10 lg:gap-y-20 py-20 relative z-10 `}
+          className={`flex flex-col gap-y-8 sm:gap-y-10 lg:gap-y-20 py-10 md:py-20 relative z-10 `}
         >
           <div className="heading mx-auto flex flex-col items-center  md:gap-y-3 font-bold">
             <p className="text-xl sm:text-2xl text-primary flex items-center">
