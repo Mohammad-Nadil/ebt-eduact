@@ -20,7 +20,7 @@ const Error = () => {
               <p className="font-urbanist text-[16px] font-semibold text-secondaryText leading-8 mb-7.5">
                 The page you are looking for is not exist.
               </p>
-              <div className="flex items-center mb-7.5 gap-2.25 py-3 md:py-5 pl-10 rounded-sm bg-[#F6F6F6] w-80 md:w-124">
+              <div className="flex items-center mb-7.5 gap-2.25 py-3 md:py-5 pl-10 rounded-sm bg-[#F6F6F6] w-70 md:w-124">
                 <CiSearch className="text-2xl text-secondaryText " />
                 <input
                   type="text"
