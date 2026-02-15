@@ -102,21 +102,49 @@ const BlogDetails = () => {
             </div>
             {/* latest part */}
             <div className="mt-[30px] p-[30px] bg-white rounded-2xl">
-              <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">latest Post</h1>
-              <div className="flex gap-[20px]">
+              <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D] mb-[30px] ">Latest Post</h1>
+
+
+              
+              <div className="flex gap-[20px] items-center border-t-2 border-dotted border-[#F57005] pt-[30px]">
                 <div className="h-[89px] w-[89px] bg-[#152B4A] rounded-2xl"></div>
-               <div className="">
+               <div>
                  <div className="flex items-center gap-[10px]">
                 <span className="text-[#F57005]"><CiClock2 /></span>
                 <h3 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">26 Mar, 2023</h3>
                 </div>
-                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">The Complete Web Developer Guideline 2023</h1>
+                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D] mt-[20px]">The Complete Web Developer Guideline 2023</h1>
                </div>
-
-
               </div>
+
+
+              <div className="flex gap-[20px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <div className="h-[89px] w-[89px] bg-[#152B4A] rounded-2xl"></div>
+               <div>
+                 <div className="flex items-center gap-[10px]">
+                <span className="text-[#F57005]"><CiClock2 /></span>
+                <h3 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">26 Mar, 2023</h3>
+                </div>
+                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D] mt-[20px]">The Complete Web Developer Guideline 2023</h1>
+               </div>
+              </div>
+
+
+              <div className="flex gap-[20px] items-center border-t-2 border-[#E4E4E4] pt-[30px] mt-[30px]">
+                <div className="h-[89px] w-[89px] bg-[#152B4A] rounded-2xl"></div>
+               <div>
+                 <div className="flex items-center gap-[10px]">
+                <span className="text-[#F57005]"><CiClock2 /></span>
+                <h3 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">26 Mar, 2023</h3>
+                </div>
+                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D] mt-[20px]">The Complete Web Developer Guideline 2023</h1>
+               </div>
+              </div>
+
             </div>
 
+            {/* Categories part */}
+            
           </div>
         </div>
         </Container>
