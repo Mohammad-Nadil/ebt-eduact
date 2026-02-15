@@ -86,7 +86,7 @@ const Pricing = () => {
                  {plan.title}
                 </h3>
                 <p
-                  className={` mb-12 lg:mb-22.5 font-urbanist font-bold text-[40px] leading-11.75 `}
+                  className={` mb-12 lg:mb-22.5 font-urbanist font-bold text-[40px] leading-11.7 `}
                 >
                   { billing === "monthly" ? plan.monthly : plan.yearly}
                 </p>
