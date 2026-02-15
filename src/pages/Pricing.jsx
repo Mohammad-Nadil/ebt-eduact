@@ -73,7 +73,7 @@ const Pricing = () => {
               </button>
             </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-9">
+          <div className="grid grid-cols-1 md:grid-cols-3 px-3 md:py-0 gap-9 md:gap-5 lg:gap-9">
            {plans.map((plan, index) => ( 
             <div
                 key={index}
@@ -86,7 +86,7 @@ const Pricing = () => {
                  {plan.title}
                 </h3>
                 <p
-                  className={`mb-22.5 font-urbanist font-bold text-[40px] leading-11.75 `}
+                  className={` mb-12 lg:mb-22.5 font-urbanist font-bold text-[40px] leading-11.75 `}
                 >
                   { billing === "monthly" ? plan.monthly : plan.yearly}
                 </p>
