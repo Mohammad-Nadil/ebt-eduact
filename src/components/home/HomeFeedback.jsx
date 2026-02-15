@@ -66,9 +66,9 @@ const HomeFeedback = () => {
   return (
     <section
       id="feedback"
-      className={` py-10 sm:py-20 xl:py-30 ${theme === "light" ? "" : "bg-[#121534]"}`}
+      className={` py-10 sm:py-20 xl:py-30 overflow-x-clip ${theme === "light" ? "" : "bg-primaryDark "}`}
     >
-      <Container className={`flex flex-col gap-y-30`}>
+      <Container className={`flex flex-col gap-y-30 `}>
         <div className="heading mx-auto flex flex-col items-center  md:gap-y-3 font-bold">
           <p className="text-xl sm:text-2xl text-primary">Best Course</p>
           <h2
