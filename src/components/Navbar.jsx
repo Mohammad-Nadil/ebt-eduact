@@ -48,7 +48,7 @@ const Navbar = () => {
           )}
         </NavLink>
         <ul
-          className={`flex absolute sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 xl:gap-10  font-semibold  text-3xl sm:text-xs md:text-base duration-300 sm:translate-x-0
+          className={`flex absolute z-99999999 sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 xl:gap-10  font-semibold  text-3xl sm:text-xs md:text-base duration-300 sm:translate-x-0
             ${open ? "translate-x-0 " : "translate-x-[150%]"}
            ${
              navbarTheme === "light"
@@ -72,7 +72,7 @@ const Navbar = () => {
             />
 
             <div
-              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300
+              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300 text-primaryDark bg-white
               ${show ? "visible opacity-100" : "invisible opacity-0"}`}
             >
               {aboutLinks.map((item) => (
