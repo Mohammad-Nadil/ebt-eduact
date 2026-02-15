@@ -14,24 +14,24 @@ const Error = () => {
               <img src={error} alt="" />
             </div>
             <div className="input text-center ">
-              <h3 className="font-urbanist text-[40px] font-bold text-primaryText leading-6.5 mb-5">
+              <h3 className="font-urbanist text-[25px] md:text-[40px] font-bold text-primaryText leading-6.5 mb-5">
                 Oops! Page not Found
               </h3>
               <p className="font-urbanist text-[16px] font-semibold text-secondaryText leading-8 mb-7.5">
                 The page you are looking for is not exist.
               </p>
-              <div className="flex items-center mb-7.5 gap-2.25 py-5 pl-10 rounded-sm bg-[#F6F6F6] w-124">
+              <div className="flex items-center mb-7.5 gap-2.25 py-3 md:py-5 pl-10 rounded-sm bg-[#F6F6F6] w-80 md:w-124">
                 <CiSearch className="text-2xl text-secondaryText " />
                 <input
                   type="text"
                   placeholder="Type Here"
-                  className="outline-none font-urbanist text-[16px] font-semibold text-secondaryText leading-6.5  "
+                  className="outline-none font-urbanist text-[12px] md:text-[16px] font-semibold text-secondaryText leading-6.5  "
                 />
               </div>
             </div>
             <div className="btn mx-auto">
               <a href="/">
-              <button className="text-base font-urbanist font-bold text-[18px]  text-white sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary  duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10 ">
+              <button className="text-base font-urbanist font-bold text-[16px] md:text-[18px]  text-white sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary  duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10 ">
                 <p>Back to Home</p>
                 <FaArrowRightLong />
               </button></a>
