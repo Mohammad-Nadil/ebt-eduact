@@ -270,7 +270,7 @@ const CourseDetail = () => {
               </div>
             </div>
           </div>
-         </div>
+     </div>
       </div>
     </div>
   );
