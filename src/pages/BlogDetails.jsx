@@ -17,7 +17,7 @@ const BlogDetails = () => {
 
         </Container>
       </div>
-      <div className="bg-[#F6F6F6] py-[120px]">
+      <div className="py-[120px]">
         <Container>
           <div className="flex justify-between gap-[32px]">
             <div className="left">
@@ -175,7 +175,21 @@ const BlogDetails = () => {
 
             </div>
 
-            
+            {/* Tags Part */}
+
+            <div className="p-[30px] bg-white rounded-2xl mt-[30px]">
+               <h1 className="font font-urbanist font-bold text-[24px] text-[#2A254D] leading-[26px] mb-[30px] ">Tags</h1>
+                    <div className="border-t-2 border-[#F57005] border-dotted pt-[30px]">
+                      <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] cursor-pointer">Marketing</button>
+                      <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] mx-[7px] cursor-pointer">Development</button>
+                      <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] cursor-pointer">Design</button>
+                      <br />
+                      <button className="py-[14px] px-[16px] bg-[#F6F6F6] text-[16px] font-semibold font-urbanist leading-[26px] text-[#697585] mt-[10px] cursor-pointer">Digital</button>
+                    </div>
+                   
+            </div>
+
+            {/* Comments Part */}
 
           </div>
         </div>
