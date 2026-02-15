@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
 import { NavLink } from "react-router-dom";
-import { CiClock2 } from "react-icons/ci";
+import { CiClock2, CiSearch } from "react-icons/ci";
 import {FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const BlogDetails = () => {
@@ -94,10 +94,19 @@ const BlogDetails = () => {
               </div>
           
             </div>
+            {/* search */}
           <div className="right">
-            <input className="bg-[#F57005] w-[416px] h-[80px] rounded-lg text-white"  type="text" placeholder="Type here" />
+            <div className="relative">
+                <input className=" bg-[#F57005] w-[416px] h-[80px] rounded-lg text-white pl-[59px] text-[16px] font-urbanist outline-0"  type="text" placeholder="Type here" />
+                <div className="absolute h-[20px] w-[20px] top-[33px] left-[30px] text-white"><CiSearch /></div>
+            </div>
+            {/* latest part */}
+            <div>
+              
+            </div>
+
           </div>
-          </div>
+        </div>
         </Container>
     </div>
   </div>

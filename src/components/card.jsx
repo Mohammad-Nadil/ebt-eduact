@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Card = ({
   category = 'Development',
@@ -10,7 +11,7 @@ const Card = ({
 
 }) => {
   return (
-    <div className="relative bg-[#152B4A] w-[416px] h-[488px] rounded-3xl hover:shadow-xl transition-all"
+    <NavLink to="/blog/2" className="relative bg-[#152B4A] w-[416px] h-[488px] rounded-3xl hover:shadow-xl transition-all"
         >
       
       <div className="bg-white w-[356px] h-[216px] rounded-2xl p-6 absolute top-[300px] left-[30px]">
@@ -50,7 +51,7 @@ const Card = ({
           </div>
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 
