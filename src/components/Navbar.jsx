@@ -72,7 +72,7 @@ const Navbar = () => {
             />
 
             <div
-              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300
+              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300 text-primaryDark bg-white
               ${show ? "visible opacity-100" : "invisible opacity-0"}`}
             >
               {aboutLinks.map((item) => (

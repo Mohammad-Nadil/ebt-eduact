@@ -2,40 +2,20 @@ import React from "react";
 import Container from "../Container";
 import { FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
+import TeacherCard from "../TeacherCard";
 
 const Teacher = () => {
   const teachers = [1, 1, 1, 1, 1, 1];
 
   return (
     <div>
-      <div className="w-full py-43 bg-[#04090F] flex items-center justify-center">
+      <div className="w-full py-10 sm:py-16 md:py-20 xl:py-43 bg-[#04090F] flex flex-col sm:gap-y-3 items-center justify-center text-white">
         <h2 className="text-white font-bold text-5xl">Teacher</h2>
+        <p className="sm:text-xl">Home / Teacher</p>
       </div>
-      <Container className="py-16 grid grid-cols-3 gap-25 ">
+      <Container className="px-5 lg:px-14 py-16 grid grid-cols-3 gap-6 sm:gap-10 md:gap-16 lg:gap-20 xl:gap-25 ">
         {teachers.map((item, index) => (
-          <div
-            key={index}
-            className="w-full group aspect-2/3 bg-neutral-400 rounded-full after:h-1/2 relative after:w-[115%]  after:bg-secondary after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:translate-y-[10%] after:z-[-1] hover:after:bg-primary   after:rounded-b-full after:duration-300 "
-          >
-            <div className="text opacity-0 group-hover:opacity-100 duration-300 h-full w-full rounded-full flex items-center justify-center flex-col gap-y-5 bg-black/20 ">
-              <div className="member flex flex-col text-center ">
-                <h2 className="name text-3xl lg:text-4xl"> Devon Lane</h2>
-                <p className="title text-xl"> Web Designer </p>
-              </div>
-              <div className="social flex items-center gap-3">
-                {[<FaFacebookF />, <FaLinkedinIn />, <FaYoutube />].map(
-                  (item, index) => (
-                    <div
-                      key={index}
-                      className="icon w-7  aspect-square rounded-full border border-primary grid place-items-center"
-                    >
-                      {item}
-                    </div>
-                  ),
-                )}{" "}
-              </div>
-            </div>
-          </div>
+          <TeacherCard key={index} />
         ))}
       </Container>
     </div>
