@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import { NavLink } from "react-router-dom";
 import { CiClock2, CiSearch } from "react-icons/ci";
-import {FaAngleDoubleRight, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import {FaAngleDoubleRight, FaFacebookF, FaLinkedinIn, FaRegCommentDots, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const BlogDetails = () => {
   return (
@@ -190,6 +190,28 @@ const BlogDetails = () => {
             </div>
 
             {/* Comments Part */}
+            <div className="p-[30px] bg-white rounded-2xl mt-[30px]">
+                <h1 className="mb-[30px] text-[24px] font-bold font-urbanist text-[#2A254D]">Comments</h1>
+                <div className="border-t-2 border-dotted border-[#F57005] pt-[30px]">
+                  <div className="flex gap-[14px] items-center mb-[30px]">
+                    <span className="bg-[#F6F6F6] p-[15px] rounded-full "><FaRegCommentDots /></span>
+                    <h2 className="text-[16px] text-[#697585] font-semibold font-urbanist">There are many variations of Lorem available Here</h2>
+                  </div>
+                  <div className="flex gap-[14px] items-center mb-[30px]">
+                    <span className="bg-[#F57005] p-[15px] text-white rounded-full "><FaRegCommentDots /></span>
+                    <h2 className="text-[16px] text-[#697585] font-semibold font-urbanist">There are many variations of Lorem available Here</h2>
+                  </div>
+                  <div className="flex gap-[14px] items-center mb-[30px]">
+                    <span className="bg-[#F6F6F6] p-[15px] rounded-full "><FaRegCommentDots /></span>
+                    <h2 className="text-[16px] text-[#697585] font-semibold font-urbanist"><span className="font-bold text-[#2A254D]">Watson Doe on</span> Template:variations of Lorem available, but</h2>
+                  </div>
+                  <div className="flex gap-[14px] items-center mb-[30px]">
+                    <span className="bg-[#F6F6F6] p-[15px] rounded-full 
+                    "><FaRegCommentDots /></span>
+                    <h2 className="text-[16px] text-[#697585] font-semibold font-urbanist">There are many variations of Lorem available Here</h2>
+                  </div>
+                </div>
+            </div>
 
           </div>
         </div>
