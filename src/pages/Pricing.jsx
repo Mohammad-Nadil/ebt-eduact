@@ -19,13 +19,13 @@ const Pricing = () => {
       popular: false,
     },
     {
-      title: "Website Design 3",
+      title: "Website Design ",
       monthly: "$325",
       yearly: "$3900",
       popular: true,
     },
     {
-      title: "Website Design 2",
+      title: "Website Design ",
       monthly: "$325",
       yearly: "$3900",
       popular: false,
@@ -77,11 +77,11 @@ const Pricing = () => {
            {plans.map((plan, index) => ( 
             <div
                 key={index}
-              className={`pt-12.5 pb-7.5 shadow-[0px 0px 60px  #0000000] bg-[#FFFFFF] text-center rounded-[10px] relative after:w-[160%] after:aspect-square  after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:-translate-y-9/12 after:bg-[#F6F6F6]  group hover:after:bg-secondary after:-z-10 z-0 overflow-hidden after:duration-300  items-center `}
+              className={`pt-12.5 pb-7.5 drop-shadow-3xl bg-[#FFFFFF] text-center rounded-[10px] relative after:w-[160%] after:aspect-square  after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full 2xs:after:-translate-y-8/12  xs:after:-translate-y-9/12 md:after:-translate-y-6/12 lg:after:-translate-y-7/12 xl:after:-translate-y-8/12 after:bg-[#F6F6F6]  group hover:after:bg-secondary after:-z-10 z-0 overflow-hidden after:duration-300  items-center `}
             >
               <div className=" text-primaryText group-hover:text-white duration-300">
                 <h3
-                  className={`mb-7 font-urbanist font-medium text-[24px] leading-6.5 `}
+                  className={`lg:mb-7 md:mb-4 font-urbanist font-medium text-[24px] leading-6.5 `}
                 >
                  {plan.title}
                 </h3>
@@ -91,7 +91,7 @@ const Pricing = () => {
                   { billing === "monthly" ? plan.monthly : plan.yearly}
                 </p>
               </div>
-              <div className=" pricing-card flex flex-col gap-7.5 pb-10 border-b border-[#E4E4E4]">
+              <div className=" pricing-card flex flex-col gap-7.5 md:gap-5 lg:gap-7.5 pb-10 border-b border-[#E4E4E4]">
                 <h4
                   className={`font-urbanist font-bold text-[20px] leading-6.5 text-[#2A254D]`}
                 >
