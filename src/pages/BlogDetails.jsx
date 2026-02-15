@@ -17,9 +17,9 @@ const BlogDetails = () => {
 
         </Container>
       </div>
-      <div>
-        <Container className="my-[100px]">
-          <div className="flex justify-between">
+      <div className="bg-[#F6F6F6] py-[120px]">
+        <Container>
+          <div className="flex justify-between gap-[32px]">
             <div className="left">
               <div className="w-[868px] h-[449px] bg-[#152B4A] rounded-2xl"></div>
               <div className="flex gap-[40px] items-center mt-[40px] ">
@@ -101,8 +101,20 @@ const BlogDetails = () => {
                 <div className="absolute h-[20px] w-[20px] top-[33px] left-[30px] text-white"><CiSearch /></div>
             </div>
             {/* latest part */}
-            <div>
-              
+            <div className="mt-[30px] p-[30px] bg-white rounded-2xl">
+              <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">latest Post</h1>
+              <div className="flex gap-[20px]">
+                <div className="h-[89px] w-[89px] bg-[#152B4A] rounded-2xl"></div>
+               <div className="">
+                 <div className="flex items-center gap-[10px]">
+                <span className="text-[#F57005]"><CiClock2 /></span>
+                <h3 className="font-semibold font-urbanist text-[16px] leading-[26px] text-[#697585]">26 Mar, 2023</h3>
+                </div>
+                <h1 className="font-bold font-urbanist text-[24px] leading-[26px] text-[#2A254D]">The Complete Web Developer Guideline 2023</h1>
+               </div>
+
+
+              </div>
             </div>
 
           </div>
