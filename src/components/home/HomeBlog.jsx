@@ -3,8 +3,6 @@ import Container from "../Container";
 import { useTheme } from "../../context/ThemeContext";
 import courses from "../../api/course.api";
 import bg from "/images/home-images/blogBg.png";
-import envelope from "/images/home-images/mail.png";
-import { FaEnvelopesBulk } from "react-icons/fa6";
 import { LiaEnvelopeOpenTextSolid } from "react-icons/lia";
 
 const HomeBlog = () => {
@@ -14,7 +12,7 @@ const HomeBlog = () => {
   return (
     <section
       id="blog"
-      className={`py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-secondaryTextD" : "bg-primaryDark   "}`}
+      className={`py-10 sm:py-20 xl:py-30 ${theme === "light" ? "bg-white" : "bg-primaryDark   "}`}
     >
       <Container
         className={`flex flex-col gap-y-8 sm:gap-y-10 lg:gap-y-16 xl:gap-y-24`}

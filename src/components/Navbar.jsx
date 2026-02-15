@@ -16,7 +16,7 @@ const LinkTag = ({ to, children, className }) => (
       isActive ? `text-secondary  ${className}` : `  ${className}`
     }
   >
-    <p className="hover:text-secondary duration-300" >{children}</p>
+    <p className="hover:text-secondary duration-300">{children}</p>
   </NavLink>
 );
 
@@ -36,19 +36,19 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute z-50 w-full   ">
+    <nav className={` w-full ${isHome ? "absolute z-50" : ""}  `}>
       <Container
         className={`flex justify-between items-center py-2 overflow-x-clip  `}
       >
-        <div className="w-36 md:w-40 xl:w-48 ">
+        <NavLink to="/" className="w-36 xl:w-48 ">
           {navbarTheme === "light" ? (
             <img src={logo} alt="logo" className="w-full " />
           ) : (
             <img src={darkLogo} alt="logo" className="w-full " />
           )}
-        </div>
+        </NavLink>
         <ul
-          className={`flex absolute sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 md:gap-6 xl:gap-10  font-semibold  text-3xl sm:text-sm md:text-base duration-300 sm:translate-x-0
+          className={`flex absolute z-99999999 sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 xl:gap-10  font-semibold  text-3xl sm:text-xs md:text-base duration-300 sm:translate-x-0
             ${open ? "translate-x-0 " : "translate-x-[150%]"}
            ${
              navbarTheme === "light"
@@ -64,7 +64,7 @@ const Navbar = () => {
             onClick={() => setShow(!show)}
             className="relative cursor-pointer items-center gap-1 hidden sm:flex"
           >
-            <span className="hover:text-secondary" >About</span>
+            <span className="hover:text-secondary">About</span>
             <FaAngleDown
               className={`transition-transform duration-300 ${
                 show ? "rotate-180" : ""
@@ -72,7 +72,7 @@ const Navbar = () => {
             />
 
             <div
-              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300
+              className={`absolute top-full right-full sm:right-0 flex flex-col gap-2 rounded-md border border-secondary  p-2 text-nowrap transition-all duration-300 text-primaryDark bg-white
               ${show ? "visible opacity-100" : "invisible opacity-0"}`}
             >
               {aboutLinks.map((item) => (
@@ -91,13 +91,16 @@ const Navbar = () => {
           <LinkTag className={`sm:hidden`} to="/faq">
             Faq
           </LinkTag>
+          <LinkTag to="/teacher">Teacher</LinkTag>
           <LinkTag to="/course">Course</LinkTag>
           <LinkTag to="/blog">Blog</LinkTag>
           <LinkTag to="/product">Product</LinkTag>
           <LinkTag to="/pricing">Pricing</LinkTag>
-          <div className="icon text-xl hidden sm:flex items-center gap-x-3 md:px-2.5">
-            <FaMagnifyingGlass />
-            <FaRegUser />
+          <div className="icon text-xl sm:text-mdfc md:text-xl flex justify-end items-center gap-x-3 md:px-2.5">
+           <NavLink to="/gallery" > <FaMagnifyingGlass /></NavLink>
+            <NavLink to="/login">
+              <FaRegUser />
+            </NavLink>
           </div>
         </ul>
         <div

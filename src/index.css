@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Water+Brush&display=swap");
 @import "tailwindcss";
 
 @theme {
   --font-urbanist: "Urbanist", sans-serif;
+  --font-waterBrush: "Water Brush", cursive;
   --color-primary: #4f5de4;
   --color-primaryDark: #121534;
   --color-secondary: #f57005;
@@ -12,6 +13,8 @@
   --color-white: #fff;
   --color-black: #000;
   --breakpoint-xs: 375px;
+  --breakpoint-2xs: 320px;
+   --drop-shadow-3xl: 0 0px 6px rgba(0, 0, 0, 0.07); 
 }
 
 html,
@@ -31,3 +34,7 @@ body {
 
 
 
+ .pricing-card div p {
+  @apply text-[20px] font-urbanist font-medium leading-6.5 text-black 
+  
+}

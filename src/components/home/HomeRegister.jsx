@@ -12,7 +12,7 @@ const HomeRegister = () => {
   return (
     <section
       id="register"
-      className={` py-9 relative ${theme === "light" ? "bg-primary" : "bg-[#000324]"}`}
+      className={` py-9 relative overflow-x-clip ${theme === "light" ? "bg-primary" : "bg-[#000324]"}`}
     >
       <img
         className="absolute top-1/4 sm:top-1/2 sm:-translate-y-1/2 left-0 h-1/3 sm:h-full"
