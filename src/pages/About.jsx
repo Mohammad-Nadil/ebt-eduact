@@ -1,7 +1,10 @@
 import React from "react";
-import AboutSection from "../components/AboutSection";
+import AboutSection from "../components/about/AboutSection";
 import Container from "../components/Container";
-import PopularCourse from "../components/PopularCourse";
+import PopularCourse from "../components/about/PopularCourse";
+import TestimonialSection from "../components/about/TestimonialSection";
+import TeamSection from "../components/about/TeamSection";
+import SubscribeBanner from "../components/about/SubscribeBanner";
 
 const About = () => {
   return (
@@ -20,14 +23,12 @@ const About = () => {
           </h1>
         </div>
       </div>
-
-      <Container>
-      {/* banner section start */}
+    
         <AboutSection />
         <PopularCourse/>
-      {/* banner section end */}
-      </Container>
-
+        <TestimonialSection/>
+        <TeamSection/>
+        <SubscribeBanner/>
     </>
   );
 };
