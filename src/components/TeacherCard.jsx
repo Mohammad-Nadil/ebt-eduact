@@ -1,9 +1,11 @@
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const TeacherCard = ({ key , className}) => {
   return (
-    <div
+    <NavLink
+      to="/teacher/:id"
       key={key}
       className={`w-full group aspect-2/3 bg-neutral-400 rounded-full after:h-1/2 relative after:w-[115%]  after:bg-secondary after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:translate-y-[10%] after:z-[-1] hover:after:bg-primary   after:rounded-b-full after:duration-300  ${className}`}
     >
@@ -25,7 +27,7 @@ const TeacherCard = ({ key , className}) => {
           )}{" "}
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 
