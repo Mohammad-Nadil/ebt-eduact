@@ -28,13 +28,13 @@ const Pricing = () => {
       popular: false,
     },
     {
-      title: "Website Design 3",
+      title: "Website Design ",
       monthly: "$325",
       yearly: "$3900",
       popular: true,
     },
     {
-      title: "Website Design 2",
+      title: "Website Design ",
       monthly: "$325",
       yearly: "$3900",
       popular: false,
