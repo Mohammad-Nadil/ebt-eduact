@@ -1,8 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Card = ({
   category = 'Development',
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 887938d93d9c0abec6ec1d2a3b9ce8795da3a9b4
   date = '26 Mar, 2023',
   title = 'The Complete Web Developer Guideline 2023',
   authorName = 'Darrell Steward',
@@ -10,14 +15,23 @@ const Card = ({
 
 }) => {
   return (
+<<<<<<< HEAD
     <div className="relative bg-[#152B4A] w-[416px] h-[488px] rounded-3xl hover:shadow-xl transition-all"
          >
+=======
+    <NavLink to="/blog/2" className="relative bg-[#152B4A] w-[416px] h-[488px] rounded-3xl hover:shadow-xl transition-all"
+        >
+>>>>>>> 887938d93d9c0abec6ec1d2a3b9ce8795da3a9b4
       
       <div className="bg-white w-[356px] h-[216px] rounded-2xl p-6 absolute top-[300px] left-[30px]">
         <div className="flex justify-between mb-3">
           <span 
             className="text-white px-4 py-1 rounded-2xl text-xs"
+<<<<<<< HEAD
             
+=======
+           
+>>>>>>> 887938d93d9c0abec6ec1d2a3b9ce8795da3a9b4
           >
             {category}
           </span>
@@ -34,7 +48,11 @@ const Card = ({
           <div className="flex items-center gap-3">
             <div 
               className="w-10 h-10 rounded-full"
+<<<<<<< HEAD
       
+=======
+             
+>>>>>>> 887938d93d9c0abec6ec1d2a3b9ce8795da3a9b4
             />
             <div>
               <p className="text-[16px] text-[#2A254D] leading-[26px] font-urbanist font-bold">
@@ -50,7 +68,7 @@ const Card = ({
           </div>
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 

@@ -11,6 +11,7 @@ import HomeRegister from "../components/home/HomeRegister";
 import HomeFeedback from "../components/home/HomeFeedback";
 import Team from "../components/home/Team";
 import HomeBlog from "../components/home/HomeBlog";
+import Cta from "../components/home/Cta";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -38,6 +39,7 @@ const Home = () => {
       <HomeFeedback />
       <Team />
       <HomeBlog />
+      <Cta />
     </div>
   );
 };

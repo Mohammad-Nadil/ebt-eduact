@@ -18,11 +18,11 @@ const Product = () => {
 
   return (
     <>
-      <section className="py-25">
+      <section>
         <div className="bg-gray-50 min-h-screen">
           {/* Header Section */}
-          <div className="bg-[#0b0d17] text-white pt-35 pb-30 text-center">
-            <h1 className="text-7xl font-bold uppercase font-urbanist leading-12 tracking-widest">
+          <div className="w-full py-10 sm:py-16 md:py-20 xl:py-43 bg-[#04090F] flex flex-col sm:gap-y-3 items-center justify-center text-white">
+            <h1 className="text-3xl md:text-5xl font-bold uppercase font-urbanist leading-12 ">
               Products
             </h1>
             <p className="text-lg font-normal mt-2 font-urbanist">

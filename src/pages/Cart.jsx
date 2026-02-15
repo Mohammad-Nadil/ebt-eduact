@@ -1,5 +1,6 @@
 import { HiOutlineX, HiMinus, HiPlus } from "react-icons/hi";
 import { FiArrowRight } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = [
@@ -107,9 +108,7 @@ const Cart = () => {
                   w-full md:w-64 font-urbanist rounded-md"
                 />
                 <button
-                  className="bg-[#ff7a00] text-white px-6 py-3
-            flex items-center gap-2 font-medium hover:bg-orange-600
-            transition rounded-md font-urbanist"
+                  className="text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-11 after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10"
                 >
                   Apply Coupon <FiArrowRight />
                 </button>
@@ -136,19 +135,16 @@ const Cart = () => {
                 {/* Action Buttons */}
                 <div className="flex gap-4 mt-6">
                   <button
-                    className="flex-1 bg-[#23263d] text-white py-3
-              rounded flex items-center justify-center gap-2
-              hover:bg-[#1a1d2e] font-urbanist"
+                    className="flex-1 text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-[#23263d] text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-11 after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10"
                   >
                     Update <FiArrowRight />
                   </button>
-                  <button
-                    className="flex-1 bg-[#ff7a00] text-white py-3
-              rounded flex items-center justify-center gap-2
-              hover:bg-orange-600 shadow-lg shadow-orange-200 font-urbanist"
+                  <NavLink
+                  to="/Checkout"
+                    className="flex-1 text-base sm:text-lg flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-11 after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10"
                   >
                     Checkout <FiArrowRight />
-                  </button>
+                  </NavLink>
                 </div>
               </div>
             </div>

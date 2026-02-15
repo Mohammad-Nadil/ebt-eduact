@@ -2,18 +2,19 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center p-6">
-      <div className="w-full max-w-6xl ">
-        <div className="div bg-black h-[150px] flex flex-col items-center justify-center text-white">
-          <h1 className=' text-3xl font-bold'>LOGIN</h1>
-          <p>Home / Course</p>
+    <div>
+        <div class="bg-slate-900 text-white py-20 text-center">
+          <h1 class="text-4xl font-bold tracking-wide">LOGIN</h1>
+          <p class="mt-3 text-gray-400">Home / Login</p>
         </div>
-        <div class="bg-gray-200 rounded-xl p-6 mb-10 text-gray-700 text-lg mt-20">
+        <div className="bg-gray-100 md:py-30 flex items-center justify-center p-6">
+      <div className="w-full max-w-6xl ">
+        <div class="bg-gray-200 rounded-xl p-6 mb-10 text-gray-700 text-lg ">
             We have a demo account setup.
             <span className="font-semibold"> Username : demo</span> and 
             <span className="font-semibold text-orange-500"> Password : demo</span>
         </div>
-        <div className="bg-white rounded-2xl flex justify-between items-center p-10 gap-10">
+        <div className="bg-white rounded-2xl md:flex justify-between items-center p-10 gap-10">
             <div>
                 <h2 className="text-3xl font-semibold mb-6 text-gray-800">Login</h2>
                 <form className="space-y-5"/>
@@ -51,6 +52,7 @@ const Login = () => {
                     </button>
             </div>
         </div>
+    </div>
     </div>
     </div>
   )
