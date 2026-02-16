@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHeart, FaRegHeart, FaStar } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const CourseCard = ({
   duration = '20 Hours',
@@ -14,9 +15,9 @@ const CourseCard = ({
   onFavoriteClick = () => {}
 }) => {
   return (
-    <div className="w-[210px] bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+    <NavLink to={":id"} className=" bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
     
-      <div className="relative h-[130px] bg-[#2d4356] pt-3 px-3">
+      <div className="relative aspect-video bg-[#2d4356] pt-3 px-3">
        
         <button
           onClick={onFavoriteClick}
@@ -88,7 +89,7 @@ const CourseCard = ({
           </div>
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 

@@ -54,8 +54,8 @@ const HomeBlog = () => {
                       <div className="name font-bold leading-0">
                         {item.teacher.name}
                       </div>
-                      <div className="title uppercase text-xs text-secondaryText leading-0">
-                        {item.teacher.title}
+                      <div className=" uppercase text-xs text-secondaryText leading-0">
+                        {item.teacher.title }
                       </div>
                     </div>
                   </div>

@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { RiArrowRightSFill } from "react-icons/ri";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 const TeacherDetails = () => {
   return (
@@ -94,12 +95,12 @@ const TeacherDetails = () => {
           </div>
 
           {/* Get in Touch Button */}
-          <button className="mt-8 w-full sm:w-59.5 mt-8 mx-auto lg:mx-0 text-base sm:text-lg flex items-center justify-center lg:justify-start gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-11 after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10">
+          <NavLink to="/teacher-register" className="mt-8 w-full sm:w-59.5 mt-8 mx-auto lg:mx-0 text-base sm:text-lg flex items-center justify-center lg:justify-start gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondary text-white font-urbanist duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-11 after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10">
             Get In Touch
             <span>
                 <IoIosArrowRoundForward className="text-[30px]"/>
             </span>
-          </button>
+          </NavLink>
         </div>
       </Container>
 

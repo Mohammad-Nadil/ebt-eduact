@@ -2,7 +2,7 @@ const courses = [
   {
     id: 1,
     name: "React for Beginners",
-    teacher: { name: "John Doe", title: "Senior Frontend Developer" },
+    teacher: { name: "John Doe", title: "Senior  Developer" },
     duration: "10h 30m",
     lessons: 12,
     students: 250,

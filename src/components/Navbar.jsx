@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FaAngleDown, FaBars, FaRegUser } from "react-icons/fa";
 import Container from "./Container";
@@ -9,11 +9,12 @@ import { BiPhoneCall } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
 import { useTheme } from "../context/ThemeContext";
 
-const LinkTag = ({ to, children, className }) => (
+const LinkTag = ({ to, children, className, onClick }) => (
   <NavLink
     to={to}
+    onClick={onClick}
     className={({ isActive }) =>
-      isActive ? `text-secondary  ${className}` : `  ${className}`
+      isActive ? `text-secondary ${className}` : `${className}`
     }
   >
     <p className="hover:text-secondary duration-300">{children}</p>
@@ -24,10 +25,24 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
 
+  const menuRef = useRef(null);
   const { theme } = useTheme();
   const location = useLocation();
   const isHome = location.pathname === "/";
   const navbarTheme = isHome ? "dark" : theme;
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpen(false);
+        setShow(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const aboutLinks = [
     { name: "About Us", path: "/about" },
@@ -48,6 +63,7 @@ const Navbar = () => {
           )}
         </NavLink>
         <ul
+          ref={menuRef}
           className={`flex absolute z-99999999 sm:static top-full right-3 w-2/3 sm:w-auto p-5 sm:p-0 rounded-sm text-right flex-col sm:flex-row sm:items-center justify-center gap-y-4 sm:gap-y-0 gap-x-4 xl:gap-10  font-semibold  text-3xl sm:text-xs md:text-base duration-300 sm:translate-x-0
             ${open ? "translate-x-0 " : "translate-x-[150%]"}
            ${
@@ -82,22 +98,47 @@ const Navbar = () => {
               ))}
             </div>
           </li>
-          <LinkTag className={`sm:hidden`} to="/about">
+          <LinkTag
+            className={`sm:hidden`}
+            to="/about"
+            onClick={() => setOpen(false)}
+          >
             About
           </LinkTag>
-          <LinkTag className={`sm:hidden`} to="/contact">
+          <LinkTag
+            className={`sm:hidden`}
+            to="/contact"
+            onClick={() => setOpen(false)}
+          >
             Contact us
           </LinkTag>
-          <LinkTag className={`sm:hidden`} to="/faq">
+          <LinkTag
+            className={`sm:hidden`}
+            to="/faq"
+            onClick={() => setOpen(false)}
+          >
             Faq
           </LinkTag>
-          <LinkTag to="/teacher">Teacher</LinkTag>
-          <LinkTag to="/course">Course</LinkTag>
-          <LinkTag to="/blog">Blog</LinkTag>
-          <LinkTag to="/product">Product</LinkTag>
-          <LinkTag to="/pricing">Pricing</LinkTag>
+          <LinkTag to="/teacher" onClick={() => setOpen(false)}>
+            Teacher
+          </LinkTag>
+          <LinkTag to="/course" onClick={() => setOpen(false)}>
+            Course
+          </LinkTag>
+          <LinkTag to="/blog" onClick={() => setOpen(false)}>
+            Blog
+          </LinkTag>
+          <LinkTag to="/product" onClick={() => setOpen(false)}>
+            Product
+          </LinkTag>
+          <LinkTag to="/pricing" onClick={() => setOpen(false)}>
+            Pricing
+          </LinkTag>
           <div className="icon text-xl sm:text-mdfc md:text-xl flex justify-end items-center gap-x-3 md:px-2.5">
-           <NavLink to="/gallery" > <FaMagnifyingGlass /></NavLink>
+            <NavLink to="/gallery">
+              {" "}
+              <FaMagnifyingGlass />
+            </NavLink>
             <NavLink to="/login">
               <FaRegUser />
             </NavLink>

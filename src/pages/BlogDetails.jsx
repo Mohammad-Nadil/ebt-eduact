@@ -8,13 +8,11 @@ const BlogDetails = () => {
   return (
     <div>
       {/* Banner */}
-      <div className="bg-black pt-20 pb-32">
-        <Container>
-          <h1 className="text-white text-center text-4xl md:text-5xl lg:text-7xl font-bold mb-4 px-4">BLOG DETAILS</h1>
-          <p className="text-white text-center text-sm md:text-base">
-            <NavLink to="/">Home</NavLink> / <span>Blog</span>
-          </p>
-        </Container>
+          <div className="w-full py-10 sm:py-16 md:py-20 xl:py-43 bg-[#04090F] flex flex-col sm:gap-y-3 items-center justify-center text-white">
+        <h2 className=" font-bold text-2xl sm:text-3xl md:text-5xl">
+          Blog Details
+        </h2>
+        <p className="sm:text-xl">Home / Blog</p>
       </div>
 
       <div className="py-12 md:py-20 lg:py-[120px]">

@@ -9,14 +9,14 @@ const Card = ({
   authorRole = 'FRONTEND DEVELOPER',
 }) => {
   return (
-    <div
-      className="relative bg-[#152B4A] w-[416px] h-[488px] rounded-3xl hover:shadow-xl transition-all"
+    <NavLink
+        to=":id"
+      className="relative bg-[#152B4A] w-full aspect-5/6 border border-black rounded-3xl hover:shadow-xl transition-all flex items-end"
     >
-      <NavLink
-        to="/blog/2"
-        className="relative bg-[#152B4A] w-[416px] h-[488px] rounded-3xl hover:shadow-xl transition-all"
+      <div
+        className="relative bg-[#152B4A] w-full  rounded-3xl hover:shadow-xl transition-all"
       >
-        <div className="bg-white w-[356px] h-[216px] rounded-2xl p-6 absolute top-[300px] left-[30px]">
+        <div className="bg-secondaryTextD w-full rounded-2xl p-6 absolute bottom-0 left-0 translate-y-[10%]">
           <div className="flex justify-between mb-3">
             <span
               className="text-white px-4 py-1 rounded-2xl text-xs"
@@ -29,7 +29,7 @@ const Card = ({
             </span>
           </div>
 
-          <h3 className="text-[24px] font-urbanist text-[#2A254D] font-bold mb-4">
+          <h3 className="text-xl xl:text-[24px] font-urbanist text-[#2A254D] font-bold mb-4">
             {title}
           </h3>
 
@@ -53,8 +53,8 @@ const Card = ({
             </div>
           </div>
         </div>
-      </NavLink>
-    </div>
+      </div>
+    </NavLink>
   );
 };
 

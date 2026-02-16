@@ -12,7 +12,7 @@ const TeacherCard = ({ key , className}) => {
       <div className="text xl:opacity-0 group-hover:opacity-100 duration-300 h-full w-full rounded-full flex items-center justify-center flex-col gap-y-3 md:gap-y-5 bg-black/20 ">
         <div className="member flex flex-col text-center ">
           <h2 className="name text-xs xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl"> Devon Lane</h2>
-          <p className="title text-[10px] xs:text-xs sm:text-lg md:text-xl"> Web Designer </p>
+          <p className=" text-[10px] xs:text-xs sm:text-lg md:text-xl"> Web Designer </p>
         </div>
         <div className="social flex items-center gap-1.5 sm:gap-3">
           {[<FaFacebookF />, <FaLinkedinIn />, <FaYoutube />].map(

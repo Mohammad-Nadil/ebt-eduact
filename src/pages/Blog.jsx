@@ -8,20 +8,16 @@ const Blog = () => {
   return (
     <div>
       {/* Banner */}
-      <div className="bg-black pt-20 pb-32">
-        <Container>
-          <h1 className="text-white text-center text-4xl md:text-5xl lg:text-7xl font-bold mb-4 px-4">
-            BLOG
-          </h1>
-          <p className="text-white text-center text-sm md:text-base">
-            <NavLink to="/">Home</NavLink> / <span>Blog</span>
-          </p>
-        </Container>
+      <div className="w-full py-10 sm:py-16 md:py-20 xl:py-43 bg-[#04090F] flex flex-col sm:gap-y-3 items-center justify-center text-white">
+        <h2 className=" font-bold text-2xl sm:text-3xl md:text-5xl">
+          Blog
+        </h2>
+        <p className="sm:text-xl">Home / Blog</p>
       </div>
 
       <div>
-        <Container className="my-[60px] md:my-[80px] lg:my-[100px] px-4 lg:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-y-[50px] place-items-center">
+        <Container className="my-15 md:my-20 lg:my-25 px-4 lg:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-y-12 place-items-center">
             <Card />
             <Card />
             <Card />

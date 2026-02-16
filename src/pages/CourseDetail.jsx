@@ -57,36 +57,38 @@ const CourseDetail = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-black pt-20 pb-32 text-white text-center">
-        <h1 className=" text-7xl font-bold mb-4">COURSE DETAILS</h1>
-        <NavLink to="/">Home</NavLink> / <span>Course</span>
+      <div className="w-full py-10 sm:py-16 md:py-20 xl:py-43 bg-[#04090F] flex flex-col sm:gap-y-3 items-center justify-center text-white">
+        <h2 className=" font-bold text-2xl sm:text-3xl md:text-5xl">
+          Course Detail
+        </h2>
+        <p className="sm:text-xl">Home / Course</p>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto  py-12">
+        <div className="grid grid-cols-1 px-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-6">
-              <div className="relative h-[280px] bg-[#2d4356]">
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-6 ">
+              <div className="relative aspect-video  bg-[#2d4356]">
                 <div className="w-10 h-10 bg-[#ff8534] rounded-full absolute top-4 left-4" />
               </div>
 
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-[#2d4356] rounded-full flex-shrink-0" />
+                    <div className="w-12 h-12 bg-[#2d4356] rounded-full shrink-0" />
                     <div>
                       <p className="text-sm font-bold text-[#2d4356]">
                         Guy Hawkins
                       </p>
                       <p className="text-sm font-semibold text-[#697585]">
-                     Project Manager
+                        Project Manager
                       </p>
                     </div>
-                     <span className="inline-block ml-6 bg-[#5B7FDB] text-white text-[9px] font-semibold px-2 py-0.5 rounded mt-1">
+                    <span className=" ml-6 bg-[#5B7FDB] text-white text-[9px] font-semibold px-2 py-0.5 rounded mt-1 hidden sm:inline-block">
                       Development
-                      </span>
+                    </span>
                   </div>
-                  <div className="flex items-center gap-1">
+                  <div className="hidden sm:flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
                       <FaStar key={i} className="text-[#ff8534]" size={12} />
                     ))}
@@ -95,17 +97,15 @@ const CourseDetail = () => {
                     </span>
                   </div>
                   <div className="mb-6">
-                  <span className="text-2xl font-bold text-[#ff8534]">
-                    $473.00
-                  </span>
-                </div>
+                    <span className="text-2xl font-bold text-[#ff8534]">
+                      $473.00
+                    </span>
+                  </div>
                 </div>
 
                 <h2 className="text-xl font-bold text-[#2d4356] mb-1">
                   The Complete Web Developer Guideline 2023
                 </h2>
-
-                
 
                 <div className="flex gap-2 mb-6 ">
                   {["Overview", "Curriculum", "Reviews", "Instructor"].map(
@@ -113,7 +113,7 @@ const CourseDetail = () => {
                       <button
                         key={tab}
                         onClick={() => setActiveTab(tab.toLowerCase())}
-                        className={`px-5 py-2.5 text-sm font-semibold transition-colors relative ${
+                        className={`px-2 sm:px-5 py-2 sm:py-2.5 text-sm font-semibold transition-colors relative ${
                           activeTab === tab.toLowerCase()
                             ? "text-white bg-[#ff8534] rounded-lg"
                             : "text-gray-600 hover:text-gray-900"
@@ -223,10 +223,13 @@ const CourseDetail = () => {
               </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
-                <button className="w-full bg-[#ff8534] hover:bg-[#e67529] text-white font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+                <NavLink
+                  to="/login"
+                  className="w-full bg-[#ff8534] hover:bg-[#e67529] text-white font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+                >
                   Buy This Course
                   <span>→</span>
-                </button>
+                </NavLink>
               </div>
             </div>
 
@@ -270,7 +273,7 @@ const CourseDetail = () => {
               </div>
             </div>
           </div>
-     </div>
+        </div>
       </div>
     </div>
   );

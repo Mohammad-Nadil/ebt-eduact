@@ -90,20 +90,14 @@ const PopularCourse = () => {
             <div className="flex justify-end mb-4 gap-2">
               <button
                 onClick={() => swiperRef.current?.slidePrev()}
-                className="w-8 h-8 sm:w-10 sm:h-10 bg-[#4F5DE4] text-white
-                         shadow-lg flex items-center justify-center
-                         hover:bg-white hover:text-blue-600
-                         transition duration-300"
+                className="w-8 h-8 sm:w-10 sm:h-10 bg-[#4F5DE4] text-white  shadow-lg flex items-center justify-center  hover:bg-white hover:text-blue-600  transition duration-300"
               >
                 <FaArrowLeft />
               </button>
 
               <button
                 onClick={() => swiperRef.current?.slideNext()}
-                className="w-8 h-8 sm:w-10 sm:h-10 bg-[#4F5DE4] text-white
-                         shadow-lg flex items-center justify-center
-                          hover:bg-white hover:text-blue-600
-                         transition duration-300"
+                className="w-8 h-8 sm:w-10 sm:h-10 bg-[#4F5DE4] text-white  shadow-lg flex items-center justify-center   hover:bg-white hover:text-blue-600  transition duration-300"
               >
                 <FaArrowRight />
               </button>

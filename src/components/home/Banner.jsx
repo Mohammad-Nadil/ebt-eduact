@@ -91,7 +91,7 @@ const Banner = () => {
             </div>
           </div>
           <div
-            className={`join_now xl:w-1/3 xl:aspect-210/135 rounded-xl absolute bottom-0 left-0 -translate-x-1/12 sm:-translate-x-1/2 translate-y-full sm:-translate-y-1/2 flex flex-col gap-y-1 py-2 2xl:py-0 px-5 sm:px-8 justify-center
+            className={` xl:aspect-210/135 rounded-xl absolute bottom-0 left-0 -translate-x-1/12 sm:-translate-x-1/2 translate-y-full sm:-translate-y-1/2 flex flex-col gap-y-1 py-2 2xl:py-0 px-5 sm:px-8 justify-center
             ${theme === "light" ? "bg-white" : "bg-primaryText"}
             `}
           >

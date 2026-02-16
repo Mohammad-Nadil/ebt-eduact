@@ -51,7 +51,7 @@ const HomeCourse = () => {
                   {item.duration}
                 </p>
               </div>
-              <div className="rating&title flex flex-col flex-1  w-3/4 ">
+              <div className="rating&  flex flex-col flex-1  w-3/4 ">
                 <div className="flex items-center gap-1">
                   <div className="icon text-orange-500 flex gap-x-1 text-sm">
                     {Array.from({ length: 5 }, (_, i) => (
@@ -82,7 +82,7 @@ const HomeCourse = () => {
                     <div className="name font-bold leading-0">
                       {item.teacher.name}
                     </div>
-                    <div className="title uppercase text-xs text-secondaryText leading-0">
+                    <div className=" uppercase text-xs text-secondaryText leading-0">
                       {item.teacher.title}
                     </div>
                   </div>

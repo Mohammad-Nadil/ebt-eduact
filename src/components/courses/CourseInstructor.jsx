@@ -10,7 +10,7 @@ const CourseInstructor = () => {
 
   return (
     <div className="py-4">
-      <div className="flex gap-6 items-start">
+      <div className="flex flex-col sm:flex gap-6 items-start">
         <div className="w-32 h-32 bg-[#2d4356] rounded-full flex-shrink-0" />
 
         <div className="flex-1">

@@ -56,7 +56,7 @@ const CourseReviews = () => {
 
       <div className="space-y-6">
         {reviews.map((review) => (
-          <div key={review.id} className="flex gap-4">
+          <div key={review.id} className="flex flex-col sm:flex-row gap-4">
             <div className="w-20 h-20 bg-[#1e3a5f] rounded-full flex-shrink-0" />
 
             <div className="flex-1">
